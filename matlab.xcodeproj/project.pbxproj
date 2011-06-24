@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7352FC413B4F9C900AB6930 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7352FC313B4F9C900AB6930 /* QuickLook.framework */; };
+		D7352FC613B4F9C900AB6930 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7352FC513B4F9C900AB6930 /* ApplicationServices.framework */; };
+		D7352FC813B4F9C900AB6930 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7352FC713B4F9C900AB6930 /* CoreServices.framework */; };
+		D7352FCA13B4F9C900AB6930 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7352FC913B4F9C900AB6930 /* CoreFoundation.framework */; };
+		D7352FD013B4F9C900AB6930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7352FCE13B4F9C900AB6930 /* InfoPlist.strings */; };
+		D7352FD313B4F9C900AB6930 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = D7352FD213B4F9C900AB6930 /* GenerateThumbnailForURL.c */; };
+		D7352FD513B4F9C900AB6930 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = D7352FD413B4F9C900AB6930 /* GeneratePreviewForURL.c */; };
+		D7352FD713B4F9C900AB6930 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D7352FD613B4F9C900AB6930 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D7352FC013B4F9C900AB6930 /* matlab.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matlab.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7352FC313B4F9C900AB6930 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		D7352FC513B4F9C900AB6930 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		D7352FC713B4F9C900AB6930 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		D7352FC913B4F9C900AB6930 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D7352FCD13B4F9C900AB6930 /* matlab-Info.plist */ = {isa = PBXFileReference; path = "matlab-Info.plist"; sourceTree = "<group>"; };
+		D7352FCF13B4F9C900AB6930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7352FD113B4F9C900AB6930 /* matlab-Prefix.pch */ = {isa = PBXFileReference; path = "matlab-Prefix.pch"; sourceTree = "<group>"; };
+		D7352FD213B4F9C900AB6930 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		D7352FD413B4F9C900AB6930 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		D7352FD613B4F9C900AB6930 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7352FBB13B4F9C900AB6930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7352FC413B4F9C900AB6930 /* QuickLook.framework in Frameworks */,
+				D7352FC613B4F9C900AB6930 /* ApplicationServices.framework in Frameworks */,
+				D7352FC813B4F9C900AB6930 /* CoreServices.framework in Frameworks */,
+				D7352FCA13B4F9C900AB6930 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7352FB313B4F9C900AB6930 = {
+			isa = PBXGroup;
+			children = (
+				D7352FCB13B4F9C900AB6930 /* matlab */,
+				D7352FC213B4F9C900AB6930 /* Frameworks */,
+				D7352FC113B4F9C900AB6930 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7352FC113B4F9C900AB6930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7352FC013B4F9C900AB6930 /* matlab.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7352FC213B4F9C900AB6930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7352FC313B4F9C900AB6930 /* QuickLook.framework */,
+				D7352FC513B4F9C900AB6930 /* ApplicationServices.framework */,
+				D7352FC713B4F9C900AB6930 /* CoreServices.framework */,
+				D7352FC913B4F9C900AB6930 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7352FCB13B4F9C900AB6930 /* matlab */ = {
+			isa = PBXGroup;
+			children = (
+				D7352FD213B4F9C900AB6930 /* GenerateThumbnailForURL.c */,
+				D7352FD413B4F9C900AB6930 /* GeneratePreviewForURL.c */,
+				D7352FD613B4F9C900AB6930 /* main.c */,
+				D7352FCC13B4F9C900AB6930 /* Supporting Files */,
+			);
+			path = matlab;
+			sourceTree = "<group>";
+		};
+		D7352FCC13B4F9C900AB6930 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7352FCD13B4F9C900AB6930 /* matlab-Info.plist */,
+				D7352FCE13B4F9C900AB6930 /* InfoPlist.strings */,
+				D7352FD113B4F9C900AB6930 /* matlab-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D7352FBC13B4F9C900AB6930 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D7352FBF13B4F9C900AB6930 /* matlab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7352FDA13B4F9C900AB6930 /* Build configuration list for PBXNativeTarget "matlab" */;
+			buildPhases = (
+				D7352FBA13B4F9C900AB6930 /* Sources */,
+				D7352FBB13B4F9C900AB6930 /* Frameworks */,
+				D7352FBC13B4F9C900AB6930 /* Headers */,
+				D7352FBD13B4F9C900AB6930 /* Resources */,
+				D7352FBE13B4F9C900AB6930 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = matlab;
+			productName = matlab;
+			productReference = D7352FC013B4F9C900AB6930 /* matlab.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7352FB513B4F9C900AB6930 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Imperial College";
+			};
+			buildConfigurationList = D7352FB813B4F9C900AB6930 /* Build configuration list for PBXProject "matlab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7352FB313B4F9C900AB6930;
+			productRefGroup = D7352FC113B4F9C900AB6930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7352FBF13B4F9C900AB6930 /* matlab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7352FBD13B4F9C900AB6930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7352FD013B4F9C900AB6930 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		D7352FBE13B4F9C900AB6930 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7352FBA13B4F9C900AB6930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7352FD313B4F9C900AB6930 /* GenerateThumbnailForURL.c in Sources */,
+				D7352FD513B4F9C900AB6930 /* GeneratePreviewForURL.c in Sources */,
+				D7352FD713B4F9C900AB6930 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7352FCE13B4F9C900AB6930 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7352FCF13B4F9C900AB6930 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7352FD813B4F9C900AB6930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7352FD913B4F9C900AB6930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7352FDB13B4F9C900AB6930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "matlab/matlab-Prefix.pch";
+				INFOPLIST_FILE = "matlab/matlab-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		D7352FDC13B4F9C900AB6930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "matlab/matlab-Prefix.pch";
+				INFOPLIST_FILE = "matlab/matlab-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7352FB813B4F9C900AB6930 /* Build configuration list for PBXProject "matlab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7352FD813B4F9C900AB6930 /* Debug */,
+				D7352FD913B4F9C900AB6930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7352FDA13B4F9C900AB6930 /* Build configuration list for PBXNativeTarget "matlab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7352FDB13B4F9C900AB6930 /* Debug */,
+				D7352FDC13B4F9C900AB6930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7352FB513B4F9C900AB6930 /* Project object */;
+}
