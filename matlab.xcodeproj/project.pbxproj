@@ -7,90 +7,285 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7352FC413B4F9C900AB6930 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7352FC313B4F9C900AB6930 /* QuickLook.framework */; };
-		D7352FC613B4F9C900AB6930 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7352FC513B4F9C900AB6930 /* ApplicationServices.framework */; };
-		D7352FC813B4F9C900AB6930 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7352FC713B4F9C900AB6930 /* CoreServices.framework */; };
-		D7352FCA13B4F9C900AB6930 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7352FC913B4F9C900AB6930 /* CoreFoundation.framework */; };
-		D7352FD013B4F9C900AB6930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7352FCE13B4F9C900AB6930 /* InfoPlist.strings */; };
-		D7352FD313B4F9C900AB6930 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = D7352FD213B4F9C900AB6930 /* GenerateThumbnailForURL.c */; };
-		D7352FD513B4F9C900AB6930 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = D7352FD413B4F9C900AB6930 /* GeneratePreviewForURL.c */; };
-		D7352FD713B4F9C900AB6930 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D7352FD613B4F9C900AB6930 /* main.c */; };
+		D731C46A139CD16E00A2F314 /* libboost_date_time.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C44B139CD16E00A2F314 /* libboost_date_time.dylib */; };
+		D731C46B139CD16E00A2F314 /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C44C139CD16E00A2F314 /* libboost_filesystem.dylib */; };
+		D731C46C139CD16E00A2F314 /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C44D139CD16E00A2F314 /* libboost_regex.dylib */; };
+		D731C46D139CD16E00A2F314 /* libboost_signals.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C44E139CD16E00A2F314 /* libboost_signals.dylib */; };
+		D731C46E139CD16E00A2F314 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C44F139CD16E00A2F314 /* libboost_system.dylib */; };
+		D731C46F139CD16E00A2F314 /* libboost_thread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C450139CD16E00A2F314 /* libboost_thread.dylib */; };
+		D731C470139CD16E00A2F314 /* libhdf5_hl.6.0.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C451139CD16E00A2F314 /* libhdf5_hl.6.0.2.dylib */; };
+		D731C471139CD16E00A2F314 /* libhdf5_hl.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C452139CD16E00A2F314 /* libhdf5_hl.6.dylib */; };
+		D731C472139CD16E00A2F314 /* libhdf5.6.0.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C453139CD16E00A2F314 /* libhdf5.6.0.2.dylib */; };
+		D731C473139CD16E00A2F314 /* libhdf5.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C454139CD16E00A2F314 /* libhdf5.6.dylib */; };
+		D731C474139CD16E00A2F314 /* libicudata.dylib.42 in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C455139CD16E00A2F314 /* libicudata.dylib.42 */; };
+		D731C476139CD16E00A2F314 /* libicui18n.dylib.42 in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C457139CD16E00A2F314 /* libicui18n.dylib.42 */; };
+		D731C478139CD16E00A2F314 /* libicuio.dylib.42 in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C459139CD16E00A2F314 /* libicuio.dylib.42 */; };
+		D731C47A139CD16E00A2F314 /* libicuuc.dylib.42 in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C45B139CD16E00A2F314 /* libicuuc.dylib.42 */; };
+		D731C47C139CD16E00A2F314 /* libmat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C45D139CD16E00A2F314 /* libmat.dylib */; };
+		D731C47D139CD16E00A2F314 /* libmwfl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C45E139CD16E00A2F314 /* libmwfl.dylib */; };
+		D731C47E139CD16E00A2F314 /* libmwi18n.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C45F139CD16E00A2F314 /* libmwi18n.dylib */; };
+		D731C47F139CD16E00A2F314 /* libmwMATLAB_res.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C460139CD16E00A2F314 /* libmwMATLAB_res.dylib */; };
+		D731C480139CD16E00A2F314 /* libmwresource_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C461139CD16E00A2F314 /* libmwresource_core.dylib */; };
+		D731C481139CD16E00A2F314 /* libmx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C462139CD16E00A2F314 /* libmx.dylib */; };
+		D731C484139CD16E00A2F314 /* libut.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D731C465139CD16E00A2F314 /* libut.dylib */; };
+		D731C485139CD16E00A2F314 /* mat.h in Headers */ = {isa = PBXBuildFile; fileRef = D731C466139CD16E00A2F314 /* mat.h */; };
+		D731C486139CD16E00A2F314 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = D731C467139CD16E00A2F314 /* matrix.h */; };
+		D731C487139CD16E00A2F314 /* tmwtypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D731C468139CD16E00A2F314 /* tmwtypes.h */; };
+		D731C488139CD1FA00A2F314 /* lcdata.xml in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C44A139CD16E00A2F314 /* lcdata.xml */; };
+		D731C489139CD1FA00A2F314 /* libboost_date_time.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C44B139CD16E00A2F314 /* libboost_date_time.dylib */; };
+		D731C48A139CD1FA00A2F314 /* libboost_filesystem.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C44C139CD16E00A2F314 /* libboost_filesystem.dylib */; };
+		D731C48B139CD1FA00A2F314 /* libboost_regex.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C44D139CD16E00A2F314 /* libboost_regex.dylib */; };
+		D731C48C139CD1FA00A2F314 /* libboost_signals.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C44E139CD16E00A2F314 /* libboost_signals.dylib */; };
+		D731C48D139CD1FA00A2F314 /* libboost_system.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C44F139CD16E00A2F314 /* libboost_system.dylib */; };
+		D731C48E139CD1FA00A2F314 /* libboost_thread.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C450139CD16E00A2F314 /* libboost_thread.dylib */; };
+		D731C48F139CD1FA00A2F314 /* libhdf5_hl.6.0.2.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C451139CD16E00A2F314 /* libhdf5_hl.6.0.2.dylib */; };
+		D731C490139CD1FA00A2F314 /* libhdf5_hl.6.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C452139CD16E00A2F314 /* libhdf5_hl.6.dylib */; };
+		D731C491139CD1FA00A2F314 /* libhdf5.6.0.2.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C453139CD16E00A2F314 /* libhdf5.6.0.2.dylib */; };
+		D731C492139CD1FA00A2F314 /* libhdf5.6.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C454139CD16E00A2F314 /* libhdf5.6.dylib */; };
+		D731C493139CD1FA00A2F314 /* libicudata.dylib.42 in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C455139CD16E00A2F314 /* libicudata.dylib.42 */; };
+		D731C494139CD1FA00A2F314 /* libicudata.dylib.42.1 in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C456139CD16E00A2F314 /* libicudata.dylib.42.1 */; };
+		D731C495139CD1FA00A2F314 /* libicui18n.dylib.42 in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C457139CD16E00A2F314 /* libicui18n.dylib.42 */; };
+		D731C496139CD1FA00A2F314 /* libicui18n.dylib.42.1 in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C458139CD16E00A2F314 /* libicui18n.dylib.42.1 */; };
+		D731C497139CD1FA00A2F314 /* libicuio.dylib.42 in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C459139CD16E00A2F314 /* libicuio.dylib.42 */; };
+		D731C498139CD1FA00A2F314 /* libicuio.dylib.42.1 in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C45A139CD16E00A2F314 /* libicuio.dylib.42.1 */; };
+		D731C499139CD1FA00A2F314 /* libicuuc.dylib.42 in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C45B139CD16E00A2F314 /* libicuuc.dylib.42 */; };
+		D731C49A139CD1FA00A2F314 /* libicuuc.dylib.42.1 in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C45C139CD16E00A2F314 /* libicuuc.dylib.42.1 */; };
+		D731C49B139CD1FA00A2F314 /* libmat.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C45D139CD16E00A2F314 /* libmat.dylib */; };
+		D731C49C139CD1FA00A2F314 /* libmwfl.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C45E139CD16E00A2F314 /* libmwfl.dylib */; };
+		D731C49D139CD1FA00A2F314 /* libmwi18n.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C45F139CD16E00A2F314 /* libmwi18n.dylib */; };
+		D731C49E139CD1FA00A2F314 /* libmwMATLAB_res.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C460139CD16E00A2F314 /* libmwMATLAB_res.dylib */; };
+		D731C49F139CD1FA00A2F314 /* libmwresource_core.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C461139CD16E00A2F314 /* libmwresource_core.dylib */; };
+		D731C4A0139CD1FA00A2F314 /* libmx.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C462139CD16E00A2F314 /* libmx.dylib */; };
+		D731C4A3139CD1FA00A2F314 /* libut.dylib in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D731C465139CD16E00A2F314 /* libut.dylib */; };
+		D737F73B13462B7800DBCC8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D737F73D13462B7800DBCC8E /* Localizable.strings */; };
+		D7513DA21345F2D600E0AF6A /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA11345F2D600E0AF6A /* QuickLook.framework */; };
+		D7513DA41345F2D600E0AF6A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA31345F2D600E0AF6A /* ApplicationServices.framework */; };
+		D7513DA61345F2D600E0AF6A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA51345F2D600E0AF6A /* CoreServices.framework */; };
+		D7513DA81345F2D600E0AF6A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA71345F2D600E0AF6A /* CoreFoundation.framework */; };
+		D7513DAE1345F2D600E0AF6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7513DAC1345F2D600E0AF6A /* InfoPlist.strings */; };
+		D7513DB11345F2D600E0AF6A /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = D7513DB01345F2D600E0AF6A /* GenerateThumbnailForURL.c */; };
+		D7513DB31345F2D600E0AF6A /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D7513DB21345F2D600E0AF6A /* GeneratePreviewForURL.m */; };
+		D7513DB51345F2D600E0AF6A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D7513DB41345F2D600E0AF6A /* main.c */; };
+		D7513DC61345F3E000E0AF6A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D7513DC31345F3E000E0AF6A /* index.html */; };
+		D7513DF41345F47200E0AF6A /* icudt40l.dat in Copy dylibs */ = {isa = PBXBuildFile; fileRef = D7513DCA1345F42300E0AF6A /* icudt40l.dat */; };
+		D7513DF61345F4B800E0AF6A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DF51345F4B800E0AF6A /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D7513DE61345F45300E0AF6A /* Copy dylibs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				D7513DF41345F47200E0AF6A /* icudt40l.dat in Copy dylibs */,
+				D731C488139CD1FA00A2F314 /* lcdata.xml in Copy dylibs */,
+				D731C489139CD1FA00A2F314 /* libboost_date_time.dylib in Copy dylibs */,
+				D731C48A139CD1FA00A2F314 /* libboost_filesystem.dylib in Copy dylibs */,
+				D731C48B139CD1FA00A2F314 /* libboost_regex.dylib in Copy dylibs */,
+				D731C48C139CD1FA00A2F314 /* libboost_signals.dylib in Copy dylibs */,
+				D731C48D139CD1FA00A2F314 /* libboost_system.dylib in Copy dylibs */,
+				D731C48E139CD1FA00A2F314 /* libboost_thread.dylib in Copy dylibs */,
+				D731C48F139CD1FA00A2F314 /* libhdf5_hl.6.0.2.dylib in Copy dylibs */,
+				D731C490139CD1FA00A2F314 /* libhdf5_hl.6.dylib in Copy dylibs */,
+				D731C491139CD1FA00A2F314 /* libhdf5.6.0.2.dylib in Copy dylibs */,
+				D731C492139CD1FA00A2F314 /* libhdf5.6.dylib in Copy dylibs */,
+				D731C493139CD1FA00A2F314 /* libicudata.dylib.42 in Copy dylibs */,
+				D731C494139CD1FA00A2F314 /* libicudata.dylib.42.1 in Copy dylibs */,
+				D731C495139CD1FA00A2F314 /* libicui18n.dylib.42 in Copy dylibs */,
+				D731C496139CD1FA00A2F314 /* libicui18n.dylib.42.1 in Copy dylibs */,
+				D731C497139CD1FA00A2F314 /* libicuio.dylib.42 in Copy dylibs */,
+				D731C498139CD1FA00A2F314 /* libicuio.dylib.42.1 in Copy dylibs */,
+				D731C499139CD1FA00A2F314 /* libicuuc.dylib.42 in Copy dylibs */,
+				D731C49A139CD1FA00A2F314 /* libicuuc.dylib.42.1 in Copy dylibs */,
+				D731C49B139CD1FA00A2F314 /* libmat.dylib in Copy dylibs */,
+				D731C49C139CD1FA00A2F314 /* libmwfl.dylib in Copy dylibs */,
+				D731C49D139CD1FA00A2F314 /* libmwi18n.dylib in Copy dylibs */,
+				D731C49E139CD1FA00A2F314 /* libmwMATLAB_res.dylib in Copy dylibs */,
+				D731C49F139CD1FA00A2F314 /* libmwresource_core.dylib in Copy dylibs */,
+				D731C4A0139CD1FA00A2F314 /* libmx.dylib in Copy dylibs */,
+				D731C4A3139CD1FA00A2F314 /* libut.dylib in Copy dylibs */,
+			);
+			name = "Copy dylibs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		D7352FC013B4F9C900AB6930 /* matlab.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matlab.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7352FC313B4F9C900AB6930 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
-		D7352FC513B4F9C900AB6930 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
-		D7352FC713B4F9C900AB6930 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		D7352FC913B4F9C900AB6930 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		D7352FCD13B4F9C900AB6930 /* matlab-Info.plist */ = {isa = PBXFileReference; path = "matlab-Info.plist"; sourceTree = "<group>"; };
-		D7352FCF13B4F9C900AB6930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D7352FD113B4F9C900AB6930 /* matlab-Prefix.pch */ = {isa = PBXFileReference; path = "matlab-Prefix.pch"; sourceTree = "<group>"; };
-		D7352FD213B4F9C900AB6930 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		D7352FD413B4F9C900AB6930 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
-		D7352FD613B4F9C900AB6930 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D731C44A139CD16E00A2F314 /* lcdata.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = lcdata.xml; path = ../lcdata.xml; sourceTree = "<group>"; };
+		D731C44B139CD16E00A2F314 /* libboost_date_time.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_date_time.dylib; sourceTree = "<group>"; };
+		D731C44C139CD16E00A2F314 /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_filesystem.dylib; sourceTree = "<group>"; };
+		D731C44D139CD16E00A2F314 /* libboost_regex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_regex.dylib; sourceTree = "<group>"; };
+		D731C44E139CD16E00A2F314 /* libboost_signals.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_signals.dylib; sourceTree = "<group>"; };
+		D731C44F139CD16E00A2F314 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_system.dylib; sourceTree = "<group>"; };
+		D731C450139CD16E00A2F314 /* libboost_thread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_thread.dylib; sourceTree = "<group>"; };
+		D731C451139CD16E00A2F314 /* libhdf5_hl.6.0.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libhdf5_hl.6.0.2.dylib; sourceTree = "<group>"; };
+		D731C452139CD16E00A2F314 /* libhdf5_hl.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libhdf5_hl.6.dylib; sourceTree = "<group>"; };
+		D731C453139CD16E00A2F314 /* libhdf5.6.0.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libhdf5.6.0.2.dylib; sourceTree = "<group>"; };
+		D731C454139CD16E00A2F314 /* libhdf5.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libhdf5.6.dylib; sourceTree = "<group>"; };
+		D731C455139CD16E00A2F314 /* libicudata.dylib.42 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libicudata.dylib.42; sourceTree = "<group>"; };
+		D731C456139CD16E00A2F314 /* libicudata.dylib.42.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = libicudata.dylib.42.1; sourceTree = "<group>"; };
+		D731C457139CD16E00A2F314 /* libicui18n.dylib.42 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libicui18n.dylib.42; sourceTree = "<group>"; };
+		D731C458139CD16E00A2F314 /* libicui18n.dylib.42.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = libicui18n.dylib.42.1; sourceTree = "<group>"; };
+		D731C459139CD16E00A2F314 /* libicuio.dylib.42 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libicuio.dylib.42; sourceTree = "<group>"; };
+		D731C45A139CD16E00A2F314 /* libicuio.dylib.42.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = libicuio.dylib.42.1; sourceTree = "<group>"; };
+		D731C45B139CD16E00A2F314 /* libicuuc.dylib.42 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libicuuc.dylib.42; sourceTree = "<group>"; };
+		D731C45C139CD16E00A2F314 /* libicuuc.dylib.42.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = libicuuc.dylib.42.1; sourceTree = "<group>"; };
+		D731C45D139CD16E00A2F314 /* libmat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmat.dylib; sourceTree = "<group>"; };
+		D731C45E139CD16E00A2F314 /* libmwfl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmwfl.dylib; sourceTree = "<group>"; };
+		D731C45F139CD16E00A2F314 /* libmwi18n.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmwi18n.dylib; sourceTree = "<group>"; };
+		D731C460139CD16E00A2F314 /* libmwMATLAB_res.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmwMATLAB_res.dylib; sourceTree = "<group>"; };
+		D731C461139CD16E00A2F314 /* libmwresource_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmwresource_core.dylib; sourceTree = "<group>"; };
+		D731C462139CD16E00A2F314 /* libmx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmx.dylib; sourceTree = "<group>"; };
+		D731C465139CD16E00A2F314 /* libut.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libut.dylib; sourceTree = "<group>"; };
+		D731C466139CD16E00A2F314 /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
+		D731C467139CD16E00A2F314 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		D731C468139CD16E00A2F314 /* tmwtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmwtypes.h; sourceTree = "<group>"; };
+		D737F73C13462B7800DBCC8E /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D737F73E13462B8200DBCC8E /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7513D9E1345F2D600E0AF6A /* matlab.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matlab.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7513DA11345F2D600E0AF6A /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		D7513DA31345F2D600E0AF6A /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		D7513DA51345F2D600E0AF6A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		D7513DA71345F2D600E0AF6A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D7513DAB1345F2D600E0AF6A /* matlab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "matlab-Info.plist"; sourceTree = "<group>"; };
+		D7513DAD1345F2D600E0AF6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7513DAF1345F2D600E0AF6A /* matlab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "matlab-Prefix.pch"; sourceTree = "<group>"; };
+		D7513DB01345F2D600E0AF6A /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		D7513DB21345F2D600E0AF6A /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		D7513DB41345F2D600E0AF6A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D7513DC31345F3E000E0AF6A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		D7513DC41345F3E000E0AF6A /* Matlab.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Matlab.icns; sourceTree = "<group>"; };
+		D7513DC51345F3E000E0AF6A /* matlab.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = matlab.mat; sourceTree = "<group>"; };
+		D7513DCA1345F42300E0AF6A /* icudt40l.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = icudt40l.dat; path = ../icudt40l.dat; sourceTree = "<group>"; };
+		D7513DF51345F4B800E0AF6A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../../../../../../System/Library/Frameworks/AppKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D7352FBB13B4F9C900AB6930 /* Frameworks */ = {
+		D7513D991345F2D600E0AF6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7352FC413B4F9C900AB6930 /* QuickLook.framework in Frameworks */,
-				D7352FC613B4F9C900AB6930 /* ApplicationServices.framework in Frameworks */,
-				D7352FC813B4F9C900AB6930 /* CoreServices.framework in Frameworks */,
-				D7352FCA13B4F9C900AB6930 /* CoreFoundation.framework in Frameworks */,
+				D7513DA21345F2D600E0AF6A /* QuickLook.framework in Frameworks */,
+				D7513DA41345F2D600E0AF6A /* ApplicationServices.framework in Frameworks */,
+				D7513DA61345F2D600E0AF6A /* CoreServices.framework in Frameworks */,
+				D7513DA81345F2D600E0AF6A /* CoreFoundation.framework in Frameworks */,
+				D7513DF61345F4B800E0AF6A /* AppKit.framework in Frameworks */,
+				D731C46A139CD16E00A2F314 /* libboost_date_time.dylib in Frameworks */,
+				D731C46B139CD16E00A2F314 /* libboost_filesystem.dylib in Frameworks */,
+				D731C46C139CD16E00A2F314 /* libboost_regex.dylib in Frameworks */,
+				D731C46D139CD16E00A2F314 /* libboost_signals.dylib in Frameworks */,
+				D731C46E139CD16E00A2F314 /* libboost_system.dylib in Frameworks */,
+				D731C46F139CD16E00A2F314 /* libboost_thread.dylib in Frameworks */,
+				D731C470139CD16E00A2F314 /* libhdf5_hl.6.0.2.dylib in Frameworks */,
+				D731C471139CD16E00A2F314 /* libhdf5_hl.6.dylib in Frameworks */,
+				D731C472139CD16E00A2F314 /* libhdf5.6.0.2.dylib in Frameworks */,
+				D731C473139CD16E00A2F314 /* libhdf5.6.dylib in Frameworks */,
+				D731C474139CD16E00A2F314 /* libicudata.dylib.42 in Frameworks */,
+				D731C476139CD16E00A2F314 /* libicui18n.dylib.42 in Frameworks */,
+				D731C478139CD16E00A2F314 /* libicuio.dylib.42 in Frameworks */,
+				D731C47A139CD16E00A2F314 /* libicuuc.dylib.42 in Frameworks */,
+				D731C47C139CD16E00A2F314 /* libmat.dylib in Frameworks */,
+				D731C47D139CD16E00A2F314 /* libmwfl.dylib in Frameworks */,
+				D731C47E139CD16E00A2F314 /* libmwi18n.dylib in Frameworks */,
+				D731C47F139CD16E00A2F314 /* libmwMATLAB_res.dylib in Frameworks */,
+				D731C480139CD16E00A2F314 /* libmwresource_core.dylib in Frameworks */,
+				D731C481139CD16E00A2F314 /* libmx.dylib in Frameworks */,
+				D731C484139CD16E00A2F314 /* libut.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D7352FB313B4F9C900AB6930 = {
+		D71E179D1347818F0057D44F /* Mathworks 2011a dylibs */ = {
 			isa = PBXGroup;
 			children = (
-				D7352FCB13B4F9C900AB6930 /* matlab */,
-				D7352FC213B4F9C900AB6930 /* Frameworks */,
-				D7352FC113B4F9C900AB6930 /* Products */,
+				D731C44B139CD16E00A2F314 /* libboost_date_time.dylib */,
+				D731C44C139CD16E00A2F314 /* libboost_filesystem.dylib */,
+				D731C44D139CD16E00A2F314 /* libboost_regex.dylib */,
+				D731C44E139CD16E00A2F314 /* libboost_signals.dylib */,
+				D731C44F139CD16E00A2F314 /* libboost_system.dylib */,
+				D731C450139CD16E00A2F314 /* libboost_thread.dylib */,
+				D731C451139CD16E00A2F314 /* libhdf5_hl.6.0.2.dylib */,
+				D731C452139CD16E00A2F314 /* libhdf5_hl.6.dylib */,
+				D731C453139CD16E00A2F314 /* libhdf5.6.0.2.dylib */,
+				D731C454139CD16E00A2F314 /* libhdf5.6.dylib */,
+				D731C455139CD16E00A2F314 /* libicudata.dylib.42 */,
+				D731C456139CD16E00A2F314 /* libicudata.dylib.42.1 */,
+				D731C457139CD16E00A2F314 /* libicui18n.dylib.42 */,
+				D731C458139CD16E00A2F314 /* libicui18n.dylib.42.1 */,
+				D731C459139CD16E00A2F314 /* libicuio.dylib.42 */,
+				D731C45A139CD16E00A2F314 /* libicuio.dylib.42.1 */,
+				D731C45B139CD16E00A2F314 /* libicuuc.dylib.42 */,
+				D731C45C139CD16E00A2F314 /* libicuuc.dylib.42.1 */,
+				D731C45D139CD16E00A2F314 /* libmat.dylib */,
+				D731C45E139CD16E00A2F314 /* libmwfl.dylib */,
+				D731C45F139CD16E00A2F314 /* libmwi18n.dylib */,
+				D731C460139CD16E00A2F314 /* libmwMATLAB_res.dylib */,
+				D731C461139CD16E00A2F314 /* libmwresource_core.dylib */,
+				D731C462139CD16E00A2F314 /* libmx.dylib */,
+				D731C465139CD16E00A2F314 /* libut.dylib */,
+				D731C466139CD16E00A2F314 /* mat.h */,
+				D731C467139CD16E00A2F314 /* matrix.h */,
+				D731C468139CD16E00A2F314 /* tmwtypes.h */,
+			);
+			name = "Mathworks 2011a dylibs";
+			sourceTree = "<group>";
+		};
+		D7513D911345F2D600E0AF6A = {
+			isa = PBXGroup;
+			children = (
+				D7513DA91345F2D600E0AF6A /* matlab */,
+				D7513DA01345F2D600E0AF6A /* Frameworks */,
+				D7513D9F1345F2D600E0AF6A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D7352FC113B4F9C900AB6930 /* Products */ = {
+		D7513D9F1345F2D600E0AF6A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7352FC013B4F9C900AB6930 /* matlab.qlgenerator */,
+				D7513D9E1345F2D600E0AF6A /* matlab.qlgenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7352FC213B4F9C900AB6930 /* Frameworks */ = {
+		D7513DA01345F2D600E0AF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7352FC313B4F9C900AB6930 /* QuickLook.framework */,
-				D7352FC513B4F9C900AB6930 /* ApplicationServices.framework */,
-				D7352FC713B4F9C900AB6930 /* CoreServices.framework */,
-				D7352FC913B4F9C900AB6930 /* CoreFoundation.framework */,
+				D71E179D1347818F0057D44F /* Mathworks 2011a dylibs */,
+				D7513DF51345F4B800E0AF6A /* AppKit.framework */,
+				D7513DA11345F2D600E0AF6A /* QuickLook.framework */,
+				D7513DA31345F2D600E0AF6A /* ApplicationServices.framework */,
+				D7513DA51345F2D600E0AF6A /* CoreServices.framework */,
+				D7513DA71345F2D600E0AF6A /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7352FCB13B4F9C900AB6930 /* matlab */ = {
+		D7513DA91345F2D600E0AF6A /* matlab */ = {
 			isa = PBXGroup;
 			children = (
-				D7352FD213B4F9C900AB6930 /* GenerateThumbnailForURL.c */,
-				D7352FD413B4F9C900AB6930 /* GeneratePreviewForURL.c */,
-				D7352FD613B4F9C900AB6930 /* main.c */,
-				D7352FCC13B4F9C900AB6930 /* Supporting Files */,
+				D7513DB01345F2D600E0AF6A /* GenerateThumbnailForURL.c */,
+				D7513DB21345F2D600E0AF6A /* GeneratePreviewForURL.m */,
+				D7513DB41345F2D600E0AF6A /* main.c */,
+				D7513DAA1345F2D600E0AF6A /* Supporting Files */,
 			);
 			path = matlab;
 			sourceTree = "<group>";
 		};
-		D7352FCC13B4F9C900AB6930 /* Supporting Files */ = {
+		D7513DAA1345F2D600E0AF6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D7352FCD13B4F9C900AB6930 /* matlab-Info.plist */,
-				D7352FCE13B4F9C900AB6930 /* InfoPlist.strings */,
-				D7352FD113B4F9C900AB6930 /* matlab-Prefix.pch */,
+				D731C44A139CD16E00A2F314 /* lcdata.xml */,
+				D7513DCA1345F42300E0AF6A /* icudt40l.dat */,
+				D7513DC31345F3E000E0AF6A /* index.html */,
+				D7513DC41345F3E000E0AF6A /* Matlab.icns */,
+				D7513DC51345F3E000E0AF6A /* matlab.mat */,
+				D7513DAB1345F2D600E0AF6A /* matlab-Info.plist */,
+				D7513DAC1345F2D600E0AF6A /* InfoPlist.strings */,
+				D737F73D13462B7800DBCC8E /* Localizable.strings */,
+				D7513DAF1345F2D600E0AF6A /* matlab-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -98,25 +293,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D7352FBC13B4F9C900AB6930 /* Headers */ = {
+		D7513D9A1345F2D600E0AF6A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D731C485139CD16E00A2F314 /* mat.h in Headers */,
+				D731C486139CD16E00A2F314 /* matrix.h in Headers */,
+				D731C487139CD16E00A2F314 /* tmwtypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D7352FBF13B4F9C900AB6930 /* matlab */ = {
+		D7513D9D1345F2D600E0AF6A /* matlab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7352FDA13B4F9C900AB6930 /* Build configuration list for PBXNativeTarget "matlab" */;
+			buildConfigurationList = D7513DB81345F2D600E0AF6A /* Build configuration list for PBXNativeTarget "matlab" */;
 			buildPhases = (
-				D7352FBA13B4F9C900AB6930 /* Sources */,
-				D7352FBB13B4F9C900AB6930 /* Frameworks */,
-				D7352FBC13B4F9C900AB6930 /* Headers */,
-				D7352FBD13B4F9C900AB6930 /* Resources */,
-				D7352FBE13B4F9C900AB6930 /* Rez */,
+				D7513D981345F2D600E0AF6A /* Sources */,
+				D7513D991345F2D600E0AF6A /* Frameworks */,
+				D7513D9A1345F2D600E0AF6A /* Headers */,
+				D7513D9B1345F2D600E0AF6A /* Resources */,
+				D7513D9C1345F2D600E0AF6A /* Rez */,
+				D7513DE61345F45300E0AF6A /* Copy dylibs */,
 			);
 			buildRules = (
 			);
@@ -124,47 +323,50 @@
 			);
 			name = matlab;
 			productName = matlab;
-			productReference = D7352FC013B4F9C900AB6930 /* matlab.qlgenerator */;
+			productReference = D7513D9E1345F2D600E0AF6A /* matlab.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D7352FB513B4F9C900AB6930 /* Project object */ = {
+		D7513D931345F2D600E0AF6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "Imperial College";
 			};
-			buildConfigurationList = D7352FB813B4F9C900AB6930 /* Build configuration list for PBXProject "matlab" */;
+			buildConfigurationList = D7513D961345F2D600E0AF6A /* Build configuration list for PBXProject "matlab" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
-			mainGroup = D7352FB313B4F9C900AB6930;
-			productRefGroup = D7352FC113B4F9C900AB6930 /* Products */;
+			mainGroup = D7513D911345F2D600E0AF6A;
+			productRefGroup = D7513D9F1345F2D600E0AF6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7352FBF13B4F9C900AB6930 /* matlab */,
+				D7513D9D1345F2D600E0AF6A /* matlab */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D7352FBD13B4F9C900AB6930 /* Resources */ = {
+		D7513D9B1345F2D600E0AF6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7352FD013B4F9C900AB6930 /* InfoPlist.strings in Resources */,
+				D7513DAE1345F2D600E0AF6A /* InfoPlist.strings in Resources */,
+				D7513DC61345F3E000E0AF6A /* index.html in Resources */,
+				D737F73B13462B7800DBCC8E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXRezBuildPhase section */
-		D7352FBE13B4F9C900AB6930 /* Rez */ = {
+		D7513D9C1345F2D600E0AF6A /* Rez */ = {
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -174,23 +376,32 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D7352FBA13B4F9C900AB6930 /* Sources */ = {
+		D7513D981345F2D600E0AF6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7352FD313B4F9C900AB6930 /* GenerateThumbnailForURL.c in Sources */,
-				D7352FD513B4F9C900AB6930 /* GeneratePreviewForURL.c in Sources */,
-				D7352FD713B4F9C900AB6930 /* main.c in Sources */,
+				D7513DB11345F2D600E0AF6A /* GenerateThumbnailForURL.c in Sources */,
+				D7513DB31345F2D600E0AF6A /* GeneratePreviewForURL.m in Sources */,
+				D7513DB51345F2D600E0AF6A /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D7352FCE13B4F9C900AB6930 /* InfoPlist.strings */ = {
+		D737F73D13462B7800DBCC8E /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D7352FCF13B4F9C900AB6930 /* en */,
+				D737F73C13462B7800DBCC8E /* en */,
+				D737F73E13462B8200DBCC8E /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D7513DAC1345F2D600E0AF6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7513DAD1345F2D600E0AF6A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -198,7 +409,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D7352FD813B4F9C900AB6930 /* Debug */ = {
+		D7513DB61345F2D600E0AF6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
@@ -216,7 +427,7 @@
 			};
 			name = Debug;
 		};
-		D7352FD913B4F9C900AB6930 /* Release */ = {
+		D7513DB71345F2D600E0AF6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
@@ -230,7 +441,7 @@
 			};
 			name = Release;
 		};
-		D7352FDB13B4F9C900AB6930 /* Debug */ = {
+		D7513DB91345F2D600E0AF6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,12 +452,16 @@
 				GCC_PREFIX_HEADER = "matlab/matlab-Prefix.pch";
 				INFOPLIST_FILE = "matlab/matlab-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Debug;
 		};
-		D7352FDC13B4F9C900AB6930 /* Release */ = {
+		D7513DBA1345F2D600E0AF6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,6 +472,10 @@
 				GCC_PREFIX_HEADER = "matlab/matlab-Prefix.pch";
 				INFOPLIST_FILE = "matlab/matlab-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
@@ -265,24 +484,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7352FB813B4F9C900AB6930 /* Build configuration list for PBXProject "matlab" */ = {
+		D7513D961345F2D600E0AF6A /* Build configuration list for PBXProject "matlab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7352FD813B4F9C900AB6930 /* Debug */,
-				D7352FD913B4F9C900AB6930 /* Release */,
+				D7513DB61345F2D600E0AF6A /* Debug */,
+				D7513DB71345F2D600E0AF6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7352FDA13B4F9C900AB6930 /* Build configuration list for PBXNativeTarget "matlab" */ = {
+		D7513DB81345F2D600E0AF6A /* Build configuration list for PBXNativeTarget "matlab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7352FDB13B4F9C900AB6930 /* Debug */,
-				D7352FDC13B4F9C900AB6930 /* Release */,
+				D7513DB91345F2D600E0AF6A /* Debug */,
+				D7513DBA1345F2D600E0AF6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D7352FB513B4F9C900AB6930 /* Project object */;
+	rootObject = D7513D931345F2D600E0AF6A /* Project object */;
 }

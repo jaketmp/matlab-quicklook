@@ -22,7 +22,7 @@
 // -----------------------------------------------------------------------------
 
 // Don't modify this line
-#define PLUGIN_ID "53A8B272-C98C-438C-AB6A-AACAA73CE6DB"
+#define PLUGIN_ID "5583A43A-1625-47B4-B044-0EB55468E827"
 
 //
 // Below is the generic glue code for all plug-ins.
