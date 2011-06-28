@@ -28,6 +28,8 @@ libmwi18n.dylib
 libmwresource_core.dylib
 libmx.dylib
 libut.dylib
+libtbb.dylib
+libtbbmalloc.dylib
 
 mat.h
 matrix.h
