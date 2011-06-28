@@ -49,10 +49,8 @@
 		D701548A13BA33820020451C /* libboost_signals.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_signals.dylib; path = dylibs/libboost_signals.dylib; sourceTree = "<group>"; };
 		D701548B13BA33820020451C /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = dylibs/libboost_system.dylib; sourceTree = "<group>"; };
 		D701548C13BA33820020451C /* libboost_thread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_thread.dylib; path = dylibs/libboost_thread.dylib; sourceTree = "<group>"; };
-		D701548D13BA33820020451C /* libhdf5.6 2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libhdf5.6 2.dylib"; path = "dylibs/libhdf5.6 2.dylib"; sourceTree = "<group>"; };
 		D701548E13BA33820020451C /* libhdf5.6.0.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5.6.0.2.dylib; path = dylibs/libhdf5.6.0.2.dylib; sourceTree = "<group>"; };
 		D701548F13BA33820020451C /* libhdf5.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5.6.dylib; path = dylibs/libhdf5.6.dylib; sourceTree = "<group>"; };
-		D701549013BA33820020451C /* libhdf5_hl.6 2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libhdf5_hl.6 2.dylib"; path = "dylibs/libhdf5_hl.6 2.dylib"; sourceTree = "<group>"; };
 		D701549113BA33820020451C /* libhdf5_hl.6.0.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5_hl.6.0.2.dylib; path = dylibs/libhdf5_hl.6.0.2.dylib; sourceTree = "<group>"; };
 		D701549213BA33820020451C /* libhdf5_hl.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5_hl.6.dylib; path = dylibs/libhdf5_hl.6.dylib; sourceTree = "<group>"; };
 		D701549313BA33820020451C /* libicudata.dylib.42 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicudata.dylib.42; path = dylibs/libicudata.dylib.42; sourceTree = "<group>"; };
@@ -124,10 +122,8 @@
 				D701548A13BA33820020451C /* libboost_signals.dylib */,
 				D701548B13BA33820020451C /* libboost_system.dylib */,
 				D701548C13BA33820020451C /* libboost_thread.dylib */,
-				D701548D13BA33820020451C /* libhdf5.6 2.dylib */,
 				D701548E13BA33820020451C /* libhdf5.6.0.2.dylib */,
 				D701548F13BA33820020451C /* libhdf5.6.dylib */,
-				D701549013BA33820020451C /* libhdf5_hl.6 2.dylib */,
 				D701549113BA33820020451C /* libhdf5_hl.6.0.2.dylib */,
 				D701549213BA33820020451C /* libhdf5_hl.6.dylib */,
 				D701549313BA33820020451C /* libicudata.dylib.42 */,
