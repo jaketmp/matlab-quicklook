@@ -1,8 +1,10 @@
 A quicklook generator for Mac OS X.
 
-Previews the variables stored within MATLAB .mat workspace files.
+Previews the variables stored within MATLABs '.mat' workspace files.
 
-This code requires the MATLAB libraries - I'm not sure how The Mathworks feel about distributing them alone - so the following are missing from the un-built binary:
+This code requires the MATLAB 'libmat.dylib', and all dependent libraries. As the current release of MATLAB only ships with 64 bit versions of these libraries, it only builds an x86_64 product.
+
+The code has been built and tested against the libraries shipped with the r2011a release of MATLAB - I'm not sure how The Mathworks feel about distributing them alone - so the following are missing from the un-built binary:
 
 	libboost_date_time.dylib
 	libboost_filesystem.dylib
@@ -36,3 +38,5 @@ This code requires the MATLAB libraries - I'm not sure how The Mathworks feel ab
 
 	lcdata.xml
 	icudt40l.dat
+	
+They can be located in the '{matlab .app bundle}/bin/maci64/' folder.
