@@ -6,7 +6,7 @@
 #  Created by Jake TM Pearce on 27/06/2011.
 #  Copyright 2011. All rights reserved.
 
-Dir.chdir("#{ARGV[0]}/matlab.qlgenerator/Contents/Frameworks")
+Dir.chdir("#{ARGV[0]}/#{ARGV[1]}/Contents/Frameworks")
 
 Dir.glob("*.dylib*") {|fileName|
 
@@ -47,7 +47,7 @@ Dir.glob("*.dylib*") {|fileName|
 # Now - because we linked before the dylibs were copied and we changed them, we have to alter the install name in the binary
 Dir.chdir("../MacOS")
 
-fileName = "matlab"
+fileName = ARGV[2]
 
 File.chmod(0777, fileName) 
 refList = %x[otool -L -X #{fileName}]

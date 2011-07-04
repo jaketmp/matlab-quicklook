@@ -322,7 +322,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "script_file=\"fix_loader_path.rb\"\n\necho \"Running a custom build phase script: $script_file\"\n${PROJECT_DIR}/matlab/${script_file} ${TARGET_BUILD_DIR}\nscriptExitStatus=$?\necho \"DONE with script: ${script_file} (exitStatus=${scriptExitStatus})\\n\\n\"\nexit \"${scriptExitStatus}\"";
+			shellScript = "script_file=\"fix_loader_path.rb\"\n\necho \"Running a custom build phase script: $script_file\"\n${PROJECT_DIR}/matlab/${script_file} ${TARGET_BUILD_DIR} ${WRAPPER_NAME} ${TARGET_NAME}\nscriptExitStatus=$?\necho \"DONE with script: ${script_file} (exitStatus=${scriptExitStatus})\\n\\n\"\nexit \"${scriptExitStatus}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
