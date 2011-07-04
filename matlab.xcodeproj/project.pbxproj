@@ -70,7 +70,7 @@
 		D70154A113BA33820020451C /* libtbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbb.dylib; path = dylibs/libtbb.dylib; sourceTree = "<group>"; };
 		D70154A213BA33820020451C /* libtbbmalloc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbbmalloc.dylib; path = dylibs/libtbbmalloc.dylib; sourceTree = "<group>"; };
 		D70154A313BA33820020451C /* libut.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libut.dylib; path = dylibs/libut.dylib; sourceTree = "<group>"; };
-		D72F92F213B8ED30008A44CA /* fix_loader_path.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = fix_loader_path.rb; sourceTree = "<group>"; };
+		D72F92F213B8ED30008A44CA /* fix_loader_path.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = fix_loader_path.rb; sourceTree = SOURCE_ROOT; };
 		D731C44A139CD16E00A2F314 /* lcdata.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = lcdata.xml; path = ../lcdata.xml; sourceTree = "<group>"; };
 		D731C466139CD16E00A2F314 /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
 		D731C467139CD16E00A2F314 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
@@ -153,7 +153,10 @@
 		D7513D911345F2D600E0AF6A = {
 			isa = PBXGroup;
 			children = (
-				D7513DA91345F2D600E0AF6A /* matlab */,
+				D7513DC41345F3E000E0AF6A /* Matlab.icns */,
+				D7513DC51345F3E000E0AF6A /* matlab.mat */,
+				D72F92F213B8ED30008A44CA /* fix_loader_path.rb */,
+				D7513DA91345F2D600E0AF6A /* matlabQL */,
 				D7513DA01345F2D600E0AF6A /* Frameworks */,
 				D7513D9F1345F2D600E0AF6A /* Products */,
 			);
@@ -180,16 +183,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7513DA91345F2D600E0AF6A /* matlab */ = {
+		D7513DA91345F2D600E0AF6A /* matlabQL */ = {
 			isa = PBXGroup;
 			children = (
 				D7513DB01345F2D600E0AF6A /* GenerateThumbnailForURL.c */,
 				D7513DB21345F2D600E0AF6A /* GeneratePreviewForURL.m */,
 				D7513DB41345F2D600E0AF6A /* main.c */,
-				D72F92F213B8ED30008A44CA /* fix_loader_path.rb */,
 				D7513DAA1345F2D600E0AF6A /* Supporting Files */,
 			);
-			path = matlab;
+			path = matlabQL;
 			sourceTree = "<group>";
 		};
 		D7513DAA1345F2D600E0AF6A /* Supporting Files */ = {
@@ -198,8 +200,6 @@
 				D731C44A139CD16E00A2F314 /* lcdata.xml */,
 				D7513DCA1345F42300E0AF6A /* icudt40l.dat */,
 				D7513DC31345F3E000E0AF6A /* index.html */,
-				D7513DC41345F3E000E0AF6A /* Matlab.icns */,
-				D7513DC51345F3E000E0AF6A /* matlab.mat */,
 				D7513DAB1345F2D600E0AF6A /* matlab-Info.plist */,
 				D7513DAC1345F2D600E0AF6A /* InfoPlist.strings */,
 				D737F73D13462B7800DBCC8E /* Localizable.strings */,
@@ -224,9 +224,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D7513D9D1345F2D600E0AF6A /* matlab */ = {
+		D7513D9D1345F2D600E0AF6A /* matlabQL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7513DB81345F2D600E0AF6A /* Build configuration list for PBXNativeTarget "matlab" */;
+			buildConfigurationList = D7513DB81345F2D600E0AF6A /* Build configuration list for PBXNativeTarget "matlabQL" */;
 			buildPhases = (
 				D7513D981345F2D600E0AF6A /* Sources */,
 				D7513D991345F2D600E0AF6A /* Frameworks */,
@@ -241,7 +241,7 @@
 			);
 			dependencies = (
 			);
-			name = matlab;
+			name = matlabQL;
 			productName = matlab;
 			productReference = D7513D9E1345F2D600E0AF6A /* matlab.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
@@ -267,7 +267,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7513D9D1345F2D600E0AF6A /* matlab */,
+				D7513D9D1345F2D600E0AF6A /* matlabQL */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +322,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "script_file=\"fix_loader_path.rb\"\n\necho \"Running a custom build phase script: $script_file\"\n${PROJECT_DIR}/matlab/${script_file} ${TARGET_BUILD_DIR} ${WRAPPER_NAME} ${TARGET_NAME}\nscriptExitStatus=$?\necho \"DONE with script: ${script_file} (exitStatus=${scriptExitStatus})\\n\\n\"\nexit \"${scriptExitStatus}\"";
+			shellScript = "script_file=\"fix_loader_path.rb\"\n\necho \"Running a custom build phase script: $script_file\"\n${PROJECT_DIR}/${script_file} ${TARGET_BUILD_DIR} ${WRAPPER_NAME} ${PRODUCT_NAME}\nscriptExitStatus=$?\necho \"DONE with script: ${script_file} (exitStatus=${scriptExitStatus})\\n\\n\"\nexit \"${scriptExitStatus}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -400,8 +400,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "matlab/matlab-Prefix.pch";
-				INFOPLIST_FILE = "matlab/matlab-Info.plist";
+				GCC_PREFIX_HEADER = "matlabQL/matlab-Prefix.pch";
+				INFOPLIST_FILE = "matlabQL/matlab-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,7 +409,7 @@
 					"\"$(SYSTEM_APPS_DIR)/MATLAB_R2011a.app/bin/maci64\"",
 					"\"$(SRCROOT)/dylibs\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = matlab;
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Debug;
@@ -422,8 +422,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "matlab/matlab-Prefix.pch";
-				INFOPLIST_FILE = "matlab/matlab-Info.plist";
+				GCC_PREFIX_HEADER = "matlabQL/matlab-Prefix.pch";
+				INFOPLIST_FILE = "matlabQL/matlab-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,7 +431,7 @@
 					"\"$(SYSTEM_APPS_DIR)/MATLAB_R2011a.app/bin/maci64\"",
 					"\"$(SRCROOT)/dylibs\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = matlab;
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Release;
@@ -448,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7513DB81345F2D600E0AF6A /* Build configuration list for PBXNativeTarget "matlab" */ = {
+		D7513DB81345F2D600E0AF6A /* Build configuration list for PBXNativeTarget "matlabQL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7513DB91345F2D600E0AF6A /* Debug */,
