@@ -12,18 +12,18 @@
 		D731C486139CD16E00A2F314 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = D731C467139CD16E00A2F314 /* matrix.h */; };
 		D731C487139CD16E00A2F314 /* tmwtypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D731C468139CD16E00A2F314 /* tmwtypes.h */; };
 		D731C488139CD1FA00A2F314 /* lcdata.xml in Copy mathworks resources */ = {isa = PBXBuildFile; fileRef = D731C44A139CD16E00A2F314 /* lcdata.xml */; };
-		D737F73B13462B7800DBCC8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D737F73D13462B7800DBCC8E /* Localizable.strings */; };
 		D7513DA21345F2D600E0AF6A /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA11345F2D600E0AF6A /* QuickLook.framework */; };
 		D7513DA41345F2D600E0AF6A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA31345F2D600E0AF6A /* ApplicationServices.framework */; };
 		D7513DA61345F2D600E0AF6A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA51345F2D600E0AF6A /* CoreServices.framework */; };
 		D7513DA81345F2D600E0AF6A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA71345F2D600E0AF6A /* CoreFoundation.framework */; };
-		D7513DAE1345F2D600E0AF6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7513DAC1345F2D600E0AF6A /* InfoPlist.strings */; };
 		D7513DB11345F2D600E0AF6A /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = D7513DB01345F2D600E0AF6A /* GenerateThumbnailForURL.c */; };
 		D7513DB31345F2D600E0AF6A /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D7513DB21345F2D600E0AF6A /* GeneratePreviewForURL.m */; };
 		D7513DB51345F2D600E0AF6A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D7513DB41345F2D600E0AF6A /* main.c */; };
 		D7513DC61345F3E000E0AF6A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D7513DC31345F3E000E0AF6A /* index.html */; };
 		D7513DF41345F47200E0AF6A /* icudt40l.dat in Copy mathworks resources */ = {isa = PBXBuildFile; fileRef = D7513DCA1345F42300E0AF6A /* icudt40l.dat */; };
 		D7513DF61345F4B800E0AF6A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DF51345F4B800E0AF6A /* AppKit.framework */; };
+		D78D113613C3052500012B6D /* libmx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D70154A013BA33820020451C /* libmx.dylib */; };
+		D78D113813C3052C00012B6D /* libmat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D701549B13BA33820020451C /* libmat.dylib */; };
 		D7DAE67213BA73C200D56F33 /* libmx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D70154A013BA33820020451C /* libmx.dylib */; };
 		D7E4B16413C24D4600B88BB2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA51345F2D600E0AF6A /* CoreServices.framework */; };
 		D7E4B16513C24D4600B88BB2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA71345F2D600E0AF6A /* CoreFoundation.framework */; };
@@ -133,6 +133,8 @@
 				D7E4B16513C24D4600B88BB2 /* CoreFoundation.framework in Frameworks */,
 				D7E4B16713C24D4600B88BB2 /* CoreData.framework in Frameworks */,
 				D7E4B16913C24D4600B88BB2 /* Foundation.framework in Frameworks */,
+				D78D113813C3052C00012B6D /* libmat.dylib in Frameworks */,
+				D78D113613C3052500012B6D /* libmx.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +304,8 @@
 				D7E4B15F13C24D4600B88BB2 /* Sources */,
 				D7E4B16013C24D4600B88BB2 /* Frameworks */,
 				D7E4B16113C24D4600B88BB2 /* Resources */,
+				D78D113913C30BC100012B6D /* Copy dylibs */,
+				D78D113A13C30C0900012B6D /* Fix library linker names */,
 			);
 			buildRules = (
 			);
@@ -344,9 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7513DAE1345F2D600E0AF6A /* InfoPlist.strings in Resources */,
 				D7513DC61345F3E000E0AF6A /* index.html in Resources */,
-				D737F73B13462B7800DBCC8E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +376,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "# Use cpio in order to preserve symlinks\n\necho \"Copying Matlab libraries.\"\ncd ${PROJECT_DIR}/dylibs\nif [ ! -d ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks ];\nthen\n    mkdir ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\nfi\nfind . -depth -print0 | cpio --null -pvd ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\nexit 0";
+		};
+		D78D113913C30BC100012B6D /* Copy dylibs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy dylibs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Use cpio in order to preserve symlinks\n\necho \"Copying Matlab libraries.\"\ncd ${PROJECT_DIR}/dylibs\nif [ ! -d ${TARGET_BUILD_DIR}/matlab.mdimporter/Contents/Frameworks ];\nthen\nmkdir ${TARGET_BUILD_DIR}/matlab.mdimporter/Contents/Frameworks\nfi\nfind . -depth -print0 | cpio --null -pvd ${TARGET_BUILD_DIR}/matlab.mdimporter/Contents/Frameworks\nexit 0";
+		};
+		D78D113A13C30C0900012B6D /* Fix library linker names */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fix library linker names";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script_file=\"fix_loader_path.rb\"\n\necho \"Running a custom build phase script: $script_file\"\n${PROJECT_DIR}/${script_file} ${TARGET_BUILD_DIR} ${WRAPPER_NAME} ${PRODUCT_NAME}\nscriptExitStatus=$?\necho \"DONE with script: ${script_file} (exitStatus=${scriptExitStatus})\\n\\n\"\nexit \"${scriptExitStatus}\"";
 		};
 		D7DD834113B8E8AD004E6CEE /* Fix library linker names */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -532,6 +562,10 @@
 				GCC_PREFIX_HEADER = "matlabMDI/matlabMDI-Prefix.pch";
 				INFOPLIST_FILE = "matlabMDI/matlabMDI-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/dylibs\"",
+				);
 				LIBRARY_STYLE = BUNDLE;
 				PRODUCT_NAME = matlab;
 				SKIP_INSTALL = YES;
@@ -552,6 +586,10 @@
 				GCC_PREFIX_HEADER = "matlabMDI/matlabMDI-Prefix.pch";
 				INFOPLIST_FILE = "matlabMDI/matlabMDI-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/dylibs\"",
+				);
 				LIBRARY_STYLE = BUNDLE;
 				PRODUCT_NAME = matlab;
 				SKIP_INSTALL = YES;
@@ -588,6 +626,7 @@
 				D7E4B17A13C24D4600B88BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D7E4B16213C24D4600B88BB2"
-               BuildableName = "matlabMDI.mdimporter"
+               BuildableName = "matlab.mdimporter"
                BlueprintName = "matlabMDI"
                ReferencedContainer = "container:matlab.xcodeproj">
             </BuildableReference>
@@ -37,6 +37,32 @@
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug">
+      <PathRunnable
+         FilePath = "/usr/bin/mdimport">
+      </PathRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D7E4B16213C24D4600B88BB2"
+            BuildableName = "matlab.mdimporter"
+            BlueprintName = "matlabMDI"
+            ReferencedContainer = "container:matlab.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-d2"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-g $(BUILT_PRODUCTS_DIR)/matlab.mdimporter"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "&quot;$(SRCROOT)/matlab.mat&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
