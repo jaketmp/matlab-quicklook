@@ -519,7 +519,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SYSTEM_APPS_DIR)/MATLAB_R2011a.app/bin/maci64\"",
+					"\"$(SYSTEM_APPS_DIR)/MATLAB_R2013a.app/bin/maci64\"",
 					"\"$(SRCROOT)/dylibs\"",
 				);
 				PRODUCT_NAME = matlab;
@@ -542,7 +542,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SYSTEM_APPS_DIR)/MATLAB_R2011a.app/bin/maci64\"",
+					"\"$(SYSTEM_APPS_DIR)/MATLAB_R2013a.app/bin/maci64\"",
 					"\"$(SRCROOT)/dylibs\"",
 				);
 				PRODUCT_NAME = matlab;
