@@ -2,7 +2,6 @@
 *.pbxuser
 *.mode1v3
 xcuserdata/
-*.xccheckout
 
 libboost_date_time.dylib
 libboost_filesystem.dylib
