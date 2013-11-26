@@ -8,18 +8,21 @@
 
 Dir.chdir("#{ARGV[0]}/#{ARGV[1]}/Contents/Frameworks")
 
+# For each dylib
 Dir.glob("*.dylib*") {|fileName|
 
+    # Check it's not a symlink
     if File.symlink?(fileName) == false
         
         puts("Got " + fileName)
         
+        # Find the dylibs it links to.
         refList = %x[otool -L -X #{fileName}]
+        refList = refList.split(/\n/)
         
-        File.chmod(0777, fileName) 
-
+        File.chmod(0777, fileName)
+        
         refList.each do |ref|
-            
             
             # Move @loader_path to ../Frameworks
             if ref =~ /\t@loader_path\/(lib.+?)\s/
@@ -36,11 +39,10 @@ Dir.glob("*.dylib*") {|fileName|
                 %x[install_name_tool -change "#{$1}" "@loader_path/../Frameworks/#{$1}" #{fileName}]
             end
 
-            
         end
         
         File.chmod(0444, fileName)
-    
+        
     end
 }
 
@@ -52,7 +54,9 @@ fileName = ARGV[2]
 File.chmod(0777, fileName) 
 refList = %x[otool -L -X #{fileName}]
 
-puts refList
+puts("Fixing: \n" + refList)
+
+refList = refList.split(/\n/)
 
 refList.each do |ref|
     # Move @loader_path to ../Frameworks
