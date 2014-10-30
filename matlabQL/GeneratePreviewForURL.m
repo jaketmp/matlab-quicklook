@@ -208,35 +208,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 		
 		uint64 fileSize = [fileAttributes fileSize];
 		// Format size string
-		NSString *sizeString;
-		if(fileSize < 1024){ //B
-			sizeString = [[NSString alloc] initWithFormat:[pluginBundle localizedStringForKey:@"%qi bytes" 
-																						 value:@"%qi bytes" 
-																						 table:nil], fileSize];
-		} else if(fileSize <= 1048576){ //KB
-			float fileSizeFraction = (float)fileSize / 1024.0;
-			sizeString = [[NSString alloc] initWithFormat:[pluginBundle localizedStringForKey:@"%1.2f KB" 
-																						 value:@"%1.2f KB" 
-																						 table:nil], fileSizeFraction];
-			
-		} else if(fileSize <= 1073741824){ //MB
-			float fileSizeFraction = (float)fileSize / 1048576.0;
-			sizeString = [[NSString alloc] initWithFormat:[pluginBundle localizedStringForKey:@"%1.2f MB" 
-																						 value:@"%1.2f MB" 
-																						 table:nil], fileSizeFraction];
-			
-		} else if(fileSize <= 1099511627776){ //GB
-			float fileSizeFraction = (float)fileSize / 1073741824.0;
-			sizeString = [[NSString alloc] initWithFormat:[pluginBundle localizedStringForKey:@"%1.2f GB" 
-																						 value:@"%1.2f GB" 
-																						 table:nil], fileSizeFraction];
-			
-		} else{ //GB Fall through to TB for now // if(fileSize > 1099511627776)
-			float fileSizeFraction = (float)fileSize / 1099511627776.0;
-			sizeString = [[NSString alloc] initWithFormat:[pluginBundle localizedStringForKey:@"%1.2f TB" 
-																						 value:@"%1.2f TB" 
-																						 table:nil], fileSizeFraction];
-		}
+        NSString *sizeString = [NSByteCountFormatter stringFromByteCount:fileSize countStyle:NSByteCountFormatterCountStyleFile];
 		[html replaceOccurrencesOfString:@"%size%" withString:sizeString options:NSLiteralSearch range:NSMakeRange(0, [html length])];
 		[html replaceOccurrencesOfString:@"%noVars%" withString:[[NSString alloc] initWithFormat:@"%i", varCount] options:NSLiteralSearch range:NSMakeRange(0, [html length])];
 		
