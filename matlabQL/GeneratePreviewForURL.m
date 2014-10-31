@@ -42,7 +42,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 		 */
 		MATFile *pmat;
 		mxArray *pa;
- 	int varCount = 0;
+        int varCount = 0;
 		
 		// Load file to scrape for matrices.
 		const char *matFilePath = [[(__bridge NSURL *)url relativePath] cStringUsingEncoding:NSUTF8StringEncoding]; // Just a pointer to url, no need to free.
@@ -115,7 +115,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
                                                                              table:nil];		break;
 				default: arrayType = [pluginBundle localizedStringForKey:@"Unknown (error)"
 																   value:@"Unknown (error)" 
-																   table:nil];						break;
+																   table:nil];					break;
 			}
 			[htmlTable appendString:[NSString stringWithFormat:@"<td>%@</td>", arrayType]];
         
@@ -147,11 +147,11 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 		NSMutableDictionary *props = [[NSMutableDictionary alloc] init];
 		
 		CFStringRef fileName = CFURLCopyLastPathComponent(url);
-    [props setObject:@"UTF-8" forKey:(NSString *)kQLPreviewPropertyTextEncodingNameKey];
-    [props setObject:@"text/html" forKey:(NSString *)kQLPreviewPropertyMIMETypeKey];
-		[props setObject:(__bridge NSString *)fileName forKey:(NSString *)kQLPreviewPropertyDisplayNameKey];
-    [props setObject:[NSNumber numberWithInt:1000] forKey:(NSString *)kQLPreviewPropertyWidthKey];
-    [props setObject:[NSNumber numberWithInt:800] forKey:(NSString *)kQLPreviewPropertyHeightKey];
+        props[(NSString *)kQLPreviewPropertyTextEncodingNameKey] = @"UTF-8";
+        props[(NSString *)kQLPreviewPropertyMIMETypeKey] = @"text/html";
+		props[(NSString *)kQLPreviewPropertyDisplayNameKey] = (__bridge NSString *)fileName;
+        props[(NSString *)kQLPreviewPropertyWidthKey] = @1000;
+        props[(NSString *)kQLPreviewPropertyHeightKey] = @800;
 		
 		/*
 		 * Load the HTML template
@@ -159,7 +159,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 		//Get the template path
 		htmlPath = [[NSString alloc] initWithFormat:@"%@%@", [pluginBundle bundlePath], @"/Contents/Resources/index.html"];
 		NSError *htmlError;
-    html = [[NSMutableString alloc] initWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:&htmlError];
+        html = [[NSMutableString alloc] initWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:&htmlError];
 		
 		
 		// Do our formating + localisations
@@ -225,9 +225,9 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 		
 		NSData *iconData = [theIcon TIFFRepresentation];
 		NSMutableDictionary *iconProps=[[NSMutableDictionary alloc] init];
-		[iconProps setObject:@"image/tiff" forKey:(NSString *)kQLPreviewPropertyMIMETypeKey];
-		[iconProps setObject:iconData forKey:(NSString *)kQLPreviewPropertyAttachmentDataKey];
-		[props setObject:[NSDictionary dictionaryWithObject:iconProps forKey:@"icon.tiff"] forKey:(NSString *)kQLPreviewPropertyAttachmentsKey];
+		iconProps[(NSString *)kQLPreviewPropertyMIMETypeKey] = @"image/tiff";
+		iconProps[(NSString *)kQLPreviewPropertyAttachmentDataKey] = iconData;
+		props[(NSString *)kQLPreviewPropertyAttachmentsKey] = @{@"icon.tiff": iconProps};
 		
 		
 		// Check for cancel

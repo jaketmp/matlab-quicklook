@@ -48,7 +48,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2011 Jake TM Pearce. All rights reserved.</string>
+	<string>Copyright © 2014 Jake TM Pearce. All rights reserved.</string>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>
