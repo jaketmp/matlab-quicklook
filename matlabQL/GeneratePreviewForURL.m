@@ -224,11 +224,11 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 		[theIcon setSize:NSMakeSize(256.0,256.0)];
 		
 		NSData *iconData = [theIcon TIFFRepresentation];
-		NSMutableDictionary *iconProps=[[NSMutableDictionary alloc] init];
-		iconProps[(NSString *)kQLPreviewPropertyMIMETypeKey] = @"image/tiff";
-		iconProps[(NSString *)kQLPreviewPropertyAttachmentDataKey] = iconData;
-		props[(NSString *)kQLPreviewPropertyAttachmentsKey] = @{@"icon.tiff": iconProps};
 		
+        NSString *base64 = [[NSString alloc] initWithData:[iconData base64EncodedDataWithOptions:0]
+                                                 encoding:NSUTF8StringEncoding];
+        NSString *image = [NSString stringWithFormat:@"data:image/tiff;base64,%@", base64];
+        [html replaceOccurrencesOfString:@"%image%" withString:image options:NSLiteralSearch range:NSMakeRange(0, [html length])];
 		
 		// Check for cancel
 		if(QLPreviewRequestIsCancelled(preview)) {
