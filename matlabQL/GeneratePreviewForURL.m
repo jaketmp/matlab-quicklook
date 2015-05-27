@@ -66,56 +66,56 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 			category = mxGetClassID(pa);
 			switch(category)  {
 				case mxUNKNOWN_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Unknown" 
-                                                                            value:@"Unknown" 
-                                                                            table:nil];			break;
+                                                                                  value:@"Unknown"
+                                                                                  table:nil];			break;
 				case mxCELL_CLASS:		arrayType = [pluginBundle localizedStringForKey:@"Cell" 
-                                                                          value:@"Cell" 
-                                                                          table:nil];			break;
+                                                                                  value:@"Cell"
+                                                                                  table:nil];			break;
 				case mxSTRUCT_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Structure" 
-                                                                           value:@"Structure" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Structure"
+                                                                                  table:nil];			break;
 				case mxLOGICAL_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Logical"
-                                                                            value:@"Logical" 
-                                                                            table:nil];			break;
+                                                                                  value:@"Logical"
+                                                                                  table:nil];			break;
 				case mxCHAR_CLASS:		arrayType = [pluginBundle localizedStringForKey:@"String"
-                                                                          value:@"String" 
-                                                                          table:nil];			break;
+                                                                                  value:@"String"
+                                                                                  table:nil];			break;
 				case mxDOUBLE_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Double"
-                                                                           value:@"Double" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Double"
+                                                                                  table:nil];			break;
 				case mxSINGLE_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Single"
-                                                                           value:@"Single" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Single"
+                                                                                  table:nil];			break;
 				case mxINT8_CLASS:		arrayType = [pluginBundle localizedStringForKey:@"Integer (8-bit)"
-                                                                          value:@"Integer (8-bit)" 
-                                                                          table:nil];			break;
+                                                                                  value:@"Integer (8-bit)"
+                                                                                  table:nil];			break;
 				case mxUINT8_CLASS:		arrayType = [pluginBundle localizedStringForKey:@"Integer (unsigned 8-bit)"
-                                                                           value:@"Integer (unsigned 8-bit)" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Integer (unsigned 8-bit)"
+                                                                                  table:nil];			break;
 				case mxINT16_CLASS:		arrayType = [pluginBundle localizedStringForKey:@"Integer (16-bit)"
-                                                                           value:@"Integer (16-bit)" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Integer (16-bit)"
+                                                                                  table:nil];			break;
 				case mxUINT16_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Integer (unsigned 16-bit)"
-                                                                           value:@"Integer (unsigned 16-bit)" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Integer (unsigned 16-bit)"
+                                                                                  table:nil];			break;
 				case mxINT32_CLASS:		arrayType = [pluginBundle localizedStringForKey:@"Integer (32-bit)"
-                                                                           value:@"Integer (32-bit)" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Integer (32-bit)"
+                                                                                  table:nil];			break;
 				case mxUINT32_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Integer (unsigned 32-bit)"
-                                                                           value:@"Integer (unsigned 32-bit)" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Integer (unsigned 32-bit)"
+                                                                                  table:nil];			break;
 				case mxINT64_CLASS:		arrayType = [pluginBundle localizedStringForKey:@"Integer (64-bit)"
-                                                                           value:@"Integer (64-bit)" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Integer (64-bit)"
+                                                                                  table:nil];			break;
 				case mxUINT64_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Integer (unsigned 64-bit)"
-                                                                           value:@"Integer (unsigned 64-bit)" 
-                                                                           table:nil];			break;
+                                                                                  value:@"Integer (unsigned 64-bit)"
+                                                                                  table:nil];			break;
 				case mxFUNCTION_CLASS:	arrayType = [pluginBundle localizedStringForKey:@"Function"
-                                                                             value:@"Function" 
-                                                                             table:nil];		break;
-				default: arrayType = [pluginBundle localizedStringForKey:@"Unknown (error)"
-																   value:@"Unknown (error)" 
-																   table:nil];					break;
+                                                                                  value:@"Function"
+                                                                                  table:nil];		    break;
+				default:                arrayType = [pluginBundle localizedStringForKey:@"Unknown (error)"
+                                                                                  value:@"Unknown (error)"
+                                                                                  table:nil];			break;
 			}
 			[htmlTable appendString:[NSString stringWithFormat:@"<td>%@</td>", arrayType]];
         
