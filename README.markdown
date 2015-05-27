@@ -19,7 +19,7 @@ Install the plugin in `/Library/Spotlight`.
 
 This code requires the MATLAB 'libmat.dylib', and all dependent libraries. As the current release of MATLAB only ships with 64-bit versions of these libraries, it only builds an x86_64 product.
 
-The script 'JTPcollectDependencies.py' can be run with a dylib as a target to collect all the dependent libraies into a specified location.
+The script 'JTPcollectDependencies.py' can be run with a dylib as a target to collect all the dependent libraries into a specified location.
 
 Some of the MATLAB libraries install paths are not prepended with `@rpath`, 'JTPfixDependencyIDs' will fix this.
 
