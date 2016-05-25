@@ -35,7 +35,7 @@
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       displayScaleIsEnabled = "NO"
       displayScale = "1.00"
       launchStyle = "0"
@@ -63,7 +63,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-g $(BUILT_PRODUCTS_DIR)/matlab.mdimporter"
+            argument = "-g &quot;$(BUILT_PRODUCTS_DIR)/matlab.mdimporter&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
