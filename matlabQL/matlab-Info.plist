@@ -20,7 +20,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Matlab.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.smrsgroup.matlab.qlgenerator</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.1</string>
 	<key>CFBundleName</key>

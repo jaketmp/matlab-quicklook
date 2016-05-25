@@ -21,6 +21,62 @@
 		D7513DC61345F3E000E0AF6A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D7513DC31345F3E000E0AF6A /* index.html */; };
 		D7513DF41345F47200E0AF6A /* icudt40l.dat in Copy mathworks resources */ = {isa = PBXBuildFile; fileRef = D7513DCA1345F42300E0AF6A /* icudt40l.dat */; };
 		D7513DF61345F4B800E0AF6A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DF51345F4B800E0AF6A /* AppKit.framework */; };
+		D7BE26C81CF59A1100167E2E /* libboost_date_time.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26AC1CF59A1100167E2E /* libboost_date_time.dylib */; };
+		D7BE26C91CF59A1100167E2E /* libboost_date_time.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26AC1CF59A1100167E2E /* libboost_date_time.dylib */; };
+		D7BE26CA1CF59A1100167E2E /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26AD1CF59A1100167E2E /* libboost_filesystem.dylib */; };
+		D7BE26CB1CF59A1100167E2E /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26AD1CF59A1100167E2E /* libboost_filesystem.dylib */; };
+		D7BE26CC1CF59A1100167E2E /* libboost_log.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26AE1CF59A1100167E2E /* libboost_log.dylib */; };
+		D7BE26CD1CF59A1100167E2E /* libboost_log.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26AE1CF59A1100167E2E /* libboost_log.dylib */; };
+		D7BE26CE1CF59A1100167E2E /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26AF1CF59A1100167E2E /* libboost_regex.dylib */; };
+		D7BE26CF1CF59A1100167E2E /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26AF1CF59A1100167E2E /* libboost_regex.dylib */; };
+		D7BE26D01CF59A1100167E2E /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B01CF59A1100167E2E /* libboost_system.dylib */; };
+		D7BE26D11CF59A1100167E2E /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B01CF59A1100167E2E /* libboost_system.dylib */; };
+		D7BE26D21CF59A1100167E2E /* libboost_thread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B11CF59A1100167E2E /* libboost_thread.dylib */; };
+		D7BE26D31CF59A1100167E2E /* libboost_thread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B11CF59A1100167E2E /* libboost_thread.dylib */; };
+		D7BE26D41CF59A1100167E2E /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B21CF59A1100167E2E /* libcrypto.1.0.0.dylib */; };
+		D7BE26D51CF59A1100167E2E /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B21CF59A1100167E2E /* libcrypto.1.0.0.dylib */; };
+		D7BE26D61CF59A1100167E2E /* libicui18n.54.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B31CF59A1100167E2E /* libicui18n.54.1.dylib */; };
+		D7BE26D71CF59A1100167E2E /* libicui18n.54.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B31CF59A1100167E2E /* libicui18n.54.1.dylib */; };
+		D7BE26D81CF59A1100167E2E /* libicui18n.54.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B41CF59A1100167E2E /* libicui18n.54.dylib */; };
+		D7BE26D91CF59A1100167E2E /* libicui18n.54.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B41CF59A1100167E2E /* libicui18n.54.dylib */; };
+		D7BE26DA1CF59A1100167E2E /* libicuuc.54.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B51CF59A1100167E2E /* libicuuc.54.1.dylib */; };
+		D7BE26DB1CF59A1100167E2E /* libicuuc.54.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B51CF59A1100167E2E /* libicuuc.54.1.dylib */; };
+		D7BE26DC1CF59A1100167E2E /* libicuuc.54.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B61CF59A1100167E2E /* libicuuc.54.dylib */; };
+		D7BE26DD1CF59A1100167E2E /* libicuuc.54.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B61CF59A1100167E2E /* libicuuc.54.dylib */; };
+		D7BE26DE1CF59A1100167E2E /* libmat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B71CF59A1100167E2E /* libmat.dylib */; };
+		D7BE26DF1CF59A1100167E2E /* libmat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B71CF59A1100167E2E /* libmat.dylib */; };
+		D7BE26E01CF59A1100167E2E /* libmwcpp11compat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B81CF59A1100167E2E /* libmwcpp11compat.dylib */; };
+		D7BE26E11CF59A1100167E2E /* libmwcpp11compat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B81CF59A1100167E2E /* libmwcpp11compat.dylib */; };
+		D7BE26E21CF59A1100167E2E /* libmwfl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B91CF59A1100167E2E /* libmwfl.dylib */; };
+		D7BE26E31CF59A1100167E2E /* libmwfl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26B91CF59A1100167E2E /* libmwfl.dylib */; };
+		D7BE26E41CF59A1100167E2E /* libmwi18n.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BA1CF59A1100167E2E /* libmwi18n.dylib */; };
+		D7BE26E51CF59A1100167E2E /* libmwi18n.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BA1CF59A1100167E2E /* libmwi18n.dylib */; };
+		D7BE26E61CF59A1100167E2E /* libmwresource_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BB1CF59A1100167E2E /* libmwresource_core.dylib */; };
+		D7BE26E71CF59A1100167E2E /* libmwresource_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BB1CF59A1100167E2E /* libmwresource_core.dylib */; };
+		D7BE26E81CF59A1100167E2E /* libboost_chrono.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BC1CF59A1100167E2E /* libboost_chrono.dylib */; };
+		D7BE26E91CF59A1100167E2E /* libboost_chrono.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BC1CF59A1100167E2E /* libboost_chrono.dylib */; };
+		D7BE26EA1CF59A1100167E2E /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BD1CF59A1100167E2E /* libboost_serialization.dylib */; };
+		D7BE26EB1CF59A1100167E2E /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BD1CF59A1100167E2E /* libboost_serialization.dylib */; };
+		D7BE26EC1CF59A1100167E2E /* libboost_signals.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BE1CF59A1100167E2E /* libboost_signals.dylib */; };
+		D7BE26ED1CF59A1100167E2E /* libboost_signals.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BE1CF59A1100167E2E /* libboost_signals.dylib */; };
+		D7BE26EE1CF59A1100167E2E /* libhdf5.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BF1CF59A1100167E2E /* libhdf5.8.dylib */; };
+		D7BE26EF1CF59A1100167E2E /* libhdf5.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26BF1CF59A1100167E2E /* libhdf5.8.dylib */; };
+		D7BE26F01CF59A1100167E2E /* libicudata.54.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C01CF59A1100167E2E /* libicudata.54.1.dylib */; };
+		D7BE26F11CF59A1100167E2E /* libicudata.54.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C01CF59A1100167E2E /* libicudata.54.1.dylib */; };
+		D7BE26F21CF59A1100167E2E /* libicudata.54.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C11CF59A1100167E2E /* libicudata.54.dylib */; };
+		D7BE26F31CF59A1100167E2E /* libicudata.54.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C11CF59A1100167E2E /* libicudata.54.dylib */; };
+		D7BE26F41CF59A1100167E2E /* libicuio.54.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C21CF59A1100167E2E /* libicuio.54.1.dylib */; };
+		D7BE26F51CF59A1100167E2E /* libicuio.54.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C21CF59A1100167E2E /* libicuio.54.1.dylib */; };
+		D7BE26F61CF59A1100167E2E /* libicuio.54.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C31CF59A1100167E2E /* libicuio.54.dylib */; };
+		D7BE26F71CF59A1100167E2E /* libicuio.54.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C31CF59A1100167E2E /* libicuio.54.dylib */; };
+		D7BE26F81CF59A1100167E2E /* libmx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C41CF59A1100167E2E /* libmx.dylib */; };
+		D7BE26F91CF59A1100167E2E /* libmx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C41CF59A1100167E2E /* libmx.dylib */; };
+		D7BE26FA1CF59A1100167E2E /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C51CF59A1100167E2E /* libtbb.dylib */; };
+		D7BE26FB1CF59A1100167E2E /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C51CF59A1100167E2E /* libtbb.dylib */; };
+		D7BE26FC1CF59A1100167E2E /* libtbbmalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C61CF59A1100167E2E /* libtbbmalloc.dylib */; };
+		D7BE26FD1CF59A1100167E2E /* libtbbmalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C61CF59A1100167E2E /* libtbbmalloc.dylib */; };
+		D7BE26FE1CF59A1100167E2E /* libut.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C71CF59A1100167E2E /* libut.dylib */; };
+		D7BE26FF1CF59A1100167E2E /* libut.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BE26C71CF59A1100167E2E /* libut.dylib */; };
 		D7E4B16413C24D4600B88BB2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA51345F2D600E0AF6A /* CoreServices.framework */; };
 		D7E4B16513C24D4600B88BB2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7513DA71345F2D600E0AF6A /* CoreFoundation.framework */; };
 		D7E4B16713C24D4600B88BB2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E4B16613C24D4600B88BB2 /* CoreData.framework */; };
@@ -28,62 +84,6 @@
 		D7E4B16F13C24D4600B88BB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7E4B16D13C24D4600B88BB2 /* InfoPlist.strings */; };
 		D7E4B17213C24D4600B88BB2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D7E4B17113C24D4600B88BB2 /* main.c */; };
 		D7E4B17413C24D4600B88BB2 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4B17313C24D4600B88BB2 /* GetMetadataForFile.m */; };
-		D7F0613D19FFFA2C00AFD99B /* libboost_date_time.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612119FFFA2C00AFD99B /* libboost_date_time.dylib */; };
-		D7F0613E19FFFA2C00AFD99B /* libboost_date_time.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612119FFFA2C00AFD99B /* libboost_date_time.dylib */; };
-		D7F0613F19FFFA2C00AFD99B /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612219FFFA2C00AFD99B /* libboost_filesystem.dylib */; };
-		D7F0614019FFFA2C00AFD99B /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612219FFFA2C00AFD99B /* libboost_filesystem.dylib */; };
-		D7F0614119FFFA2C00AFD99B /* libboost_log.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612319FFFA2C00AFD99B /* libboost_log.dylib */; };
-		D7F0614219FFFA2C00AFD99B /* libboost_log.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612319FFFA2C00AFD99B /* libboost_log.dylib */; };
-		D7F0614319FFFA2C00AFD99B /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612419FFFA2C00AFD99B /* libboost_regex.dylib */; };
-		D7F0614419FFFA2C00AFD99B /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612419FFFA2C00AFD99B /* libboost_regex.dylib */; };
-		D7F0614519FFFA2C00AFD99B /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612519FFFA2C00AFD99B /* libboost_serialization.dylib */; };
-		D7F0614619FFFA2C00AFD99B /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612519FFFA2C00AFD99B /* libboost_serialization.dylib */; };
-		D7F0614719FFFA2C00AFD99B /* libboost_signals.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612619FFFA2C00AFD99B /* libboost_signals.dylib */; };
-		D7F0614819FFFA2C00AFD99B /* libboost_signals.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612619FFFA2C00AFD99B /* libboost_signals.dylib */; };
-		D7F0614919FFFA2C00AFD99B /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612719FFFA2C00AFD99B /* libboost_system.dylib */; };
-		D7F0614A19FFFA2C00AFD99B /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612719FFFA2C00AFD99B /* libboost_system.dylib */; };
-		D7F0614B19FFFA2C00AFD99B /* libboost_thread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612819FFFA2C00AFD99B /* libboost_thread.dylib */; };
-		D7F0614C19FFFA2C00AFD99B /* libboost_thread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612819FFFA2C00AFD99B /* libboost_thread.dylib */; };
-		D7F0614D19FFFA2C00AFD99B /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612919FFFA2C00AFD99B /* libcrypto.1.0.0.dylib */; };
-		D7F0614E19FFFA2C00AFD99B /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612919FFFA2C00AFD99B /* libcrypto.1.0.0.dylib */; };
-		D7F0614F19FFFA2C00AFD99B /* libhdf5.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612A19FFFA2C00AFD99B /* libhdf5.6.dylib */; };
-		D7F0615019FFFA2C00AFD99B /* libhdf5.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612A19FFFA2C00AFD99B /* libhdf5.6.dylib */; };
-		D7F0615119FFFA2C00AFD99B /* libicudata.49.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612B19FFFA2C00AFD99B /* libicudata.49.1.2.dylib */; };
-		D7F0615219FFFA2C00AFD99B /* libicudata.49.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612B19FFFA2C00AFD99B /* libicudata.49.1.2.dylib */; };
-		D7F0615319FFFA2C00AFD99B /* libicudata.49.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612C19FFFA2C00AFD99B /* libicudata.49.dylib */; };
-		D7F0615419FFFA2C00AFD99B /* libicudata.49.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612C19FFFA2C00AFD99B /* libicudata.49.dylib */; };
-		D7F0615519FFFA2C00AFD99B /* libicui18n.49.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612D19FFFA2C00AFD99B /* libicui18n.49.1.2.dylib */; };
-		D7F0615619FFFA2C00AFD99B /* libicui18n.49.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612D19FFFA2C00AFD99B /* libicui18n.49.1.2.dylib */; };
-		D7F0615719FFFA2C00AFD99B /* libicui18n.49.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612E19FFFA2C00AFD99B /* libicui18n.49.dylib */; };
-		D7F0615819FFFA2C00AFD99B /* libicui18n.49.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612E19FFFA2C00AFD99B /* libicui18n.49.dylib */; };
-		D7F0615919FFFA2C00AFD99B /* libicuio.49.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612F19FFFA2C00AFD99B /* libicuio.49.1.2.dylib */; };
-		D7F0615A19FFFA2C00AFD99B /* libicuio.49.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0612F19FFFA2C00AFD99B /* libicuio.49.1.2.dylib */; };
-		D7F0615B19FFFA2C00AFD99B /* libicuio.49.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613019FFFA2C00AFD99B /* libicuio.49.dylib */; };
-		D7F0615C19FFFA2C00AFD99B /* libicuio.49.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613019FFFA2C00AFD99B /* libicuio.49.dylib */; };
-		D7F0615D19FFFA2C00AFD99B /* libicuuc.49.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613119FFFA2C00AFD99B /* libicuuc.49.1.2.dylib */; };
-		D7F0615E19FFFA2C00AFD99B /* libicuuc.49.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613119FFFA2C00AFD99B /* libicuuc.49.1.2.dylib */; };
-		D7F0615F19FFFA2C00AFD99B /* libicuuc.49.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613219FFFA2C00AFD99B /* libicuuc.49.dylib */; };
-		D7F0616019FFFA2C00AFD99B /* libicuuc.49.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613219FFFA2C00AFD99B /* libicuuc.49.dylib */; };
-		D7F0616119FFFA2C00AFD99B /* libmat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613319FFFA2C00AFD99B /* libmat.dylib */; };
-		D7F0616219FFFA2C00AFD99B /* libmat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613319FFFA2C00AFD99B /* libmat.dylib */; };
-		D7F0616319FFFA2C00AFD99B /* libmwcpp11compat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613419FFFA2C00AFD99B /* libmwcpp11compat.dylib */; };
-		D7F0616419FFFA2C00AFD99B /* libmwcpp11compat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613419FFFA2C00AFD99B /* libmwcpp11compat.dylib */; };
-		D7F0616519FFFA2C00AFD99B /* libmwfl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613519FFFA2C00AFD99B /* libmwfl.dylib */; };
-		D7F0616619FFFA2C00AFD99B /* libmwfl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613519FFFA2C00AFD99B /* libmwfl.dylib */; };
-		D7F0616719FFFA2C00AFD99B /* libmwi18n.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613619FFFA2C00AFD99B /* libmwi18n.dylib */; };
-		D7F0616819FFFA2C00AFD99B /* libmwi18n.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613619FFFA2C00AFD99B /* libmwi18n.dylib */; };
-		D7F0616919FFFA2C00AFD99B /* libmwMATLAB_res.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613719FFFA2C00AFD99B /* libmwMATLAB_res.dylib */; };
-		D7F0616A19FFFA2C00AFD99B /* libmwMATLAB_res.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613719FFFA2C00AFD99B /* libmwMATLAB_res.dylib */; };
-		D7F0616B19FFFA2C00AFD99B /* libmwresource_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613819FFFA2C00AFD99B /* libmwresource_core.dylib */; };
-		D7F0616C19FFFA2C00AFD99B /* libmwresource_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613819FFFA2C00AFD99B /* libmwresource_core.dylib */; };
-		D7F0616D19FFFA2C00AFD99B /* libmx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613919FFFA2C00AFD99B /* libmx.dylib */; };
-		D7F0616E19FFFA2C00AFD99B /* libmx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613919FFFA2C00AFD99B /* libmx.dylib */; };
-		D7F0616F19FFFA2C00AFD99B /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613A19FFFA2C00AFD99B /* libtbb.dylib */; };
-		D7F0617019FFFA2C00AFD99B /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613A19FFFA2C00AFD99B /* libtbb.dylib */; };
-		D7F0617119FFFA2C00AFD99B /* libtbbmalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613B19FFFA2C00AFD99B /* libtbbmalloc.dylib */; };
-		D7F0617219FFFA2C00AFD99B /* libtbbmalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613B19FFFA2C00AFD99B /* libtbbmalloc.dylib */; };
-		D7F0617319FFFA2C00AFD99B /* libut.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613C19FFFA2C00AFD99B /* libut.dylib */; };
-		D7F0617419FFFA2C00AFD99B /* libut.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F0613C19FFFA2C00AFD99B /* libut.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,6 +125,34 @@
 		D7513DC51345F3E000E0AF6A /* matlab.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = matlab.mat; sourceTree = "<group>"; };
 		D7513DCA1345F42300E0AF6A /* icudt40l.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = icudt40l.dat; sourceTree = "<group>"; };
 		D7513DF51345F4B800E0AF6A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../../../../../../System/Library/Frameworks/AppKit.framework; sourceTree = "<group>"; };
+		D7BE26AC1CF59A1100167E2E /* libboost_date_time.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_date_time.dylib; path = dylibs/libboost_date_time.dylib; sourceTree = "<group>"; };
+		D7BE26AD1CF59A1100167E2E /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_filesystem.dylib; path = dylibs/libboost_filesystem.dylib; sourceTree = "<group>"; };
+		D7BE26AE1CF59A1100167E2E /* libboost_log.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_log.dylib; path = dylibs/libboost_log.dylib; sourceTree = "<group>"; };
+		D7BE26AF1CF59A1100167E2E /* libboost_regex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_regex.dylib; path = dylibs/libboost_regex.dylib; sourceTree = "<group>"; };
+		D7BE26B01CF59A1100167E2E /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = dylibs/libboost_system.dylib; sourceTree = "<group>"; };
+		D7BE26B11CF59A1100167E2E /* libboost_thread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_thread.dylib; path = dylibs/libboost_thread.dylib; sourceTree = "<group>"; };
+		D7BE26B21CF59A1100167E2E /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.0.0.dylib; path = dylibs/libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
+		D7BE26B31CF59A1100167E2E /* libicui18n.54.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicui18n.54.1.dylib; path = dylibs/libicui18n.54.1.dylib; sourceTree = "<group>"; };
+		D7BE26B41CF59A1100167E2E /* libicui18n.54.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicui18n.54.dylib; path = dylibs/libicui18n.54.dylib; sourceTree = "<group>"; };
+		D7BE26B51CF59A1100167E2E /* libicuuc.54.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuuc.54.1.dylib; path = dylibs/libicuuc.54.1.dylib; sourceTree = "<group>"; };
+		D7BE26B61CF59A1100167E2E /* libicuuc.54.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuuc.54.dylib; path = dylibs/libicuuc.54.dylib; sourceTree = "<group>"; };
+		D7BE26B71CF59A1100167E2E /* libmat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmat.dylib; path = dylibs/libmat.dylib; sourceTree = "<group>"; };
+		D7BE26B81CF59A1100167E2E /* libmwcpp11compat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwcpp11compat.dylib; path = dylibs/libmwcpp11compat.dylib; sourceTree = "<group>"; };
+		D7BE26B91CF59A1100167E2E /* libmwfl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwfl.dylib; path = dylibs/libmwfl.dylib; sourceTree = "<group>"; };
+		D7BE26BA1CF59A1100167E2E /* libmwi18n.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwi18n.dylib; path = dylibs/libmwi18n.dylib; sourceTree = "<group>"; };
+		D7BE26BB1CF59A1100167E2E /* libmwresource_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwresource_core.dylib; path = dylibs/libmwresource_core.dylib; sourceTree = "<group>"; };
+		D7BE26BC1CF59A1100167E2E /* libboost_chrono.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_chrono.dylib; path = dylibs/libboost_chrono.dylib; sourceTree = "<group>"; };
+		D7BE26BD1CF59A1100167E2E /* libboost_serialization.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_serialization.dylib; path = dylibs/libboost_serialization.dylib; sourceTree = "<group>"; };
+		D7BE26BE1CF59A1100167E2E /* libboost_signals.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_signals.dylib; path = dylibs/libboost_signals.dylib; sourceTree = "<group>"; };
+		D7BE26BF1CF59A1100167E2E /* libhdf5.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5.8.dylib; path = dylibs/libhdf5.8.dylib; sourceTree = "<group>"; };
+		D7BE26C01CF59A1100167E2E /* libicudata.54.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicudata.54.1.dylib; path = dylibs/libicudata.54.1.dylib; sourceTree = "<group>"; };
+		D7BE26C11CF59A1100167E2E /* libicudata.54.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicudata.54.dylib; path = dylibs/libicudata.54.dylib; sourceTree = "<group>"; };
+		D7BE26C21CF59A1100167E2E /* libicuio.54.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuio.54.1.dylib; path = dylibs/libicuio.54.1.dylib; sourceTree = "<group>"; };
+		D7BE26C31CF59A1100167E2E /* libicuio.54.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuio.54.dylib; path = dylibs/libicuio.54.dylib; sourceTree = "<group>"; };
+		D7BE26C41CF59A1100167E2E /* libmx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmx.dylib; path = dylibs/libmx.dylib; sourceTree = "<group>"; };
+		D7BE26C51CF59A1100167E2E /* libtbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbb.dylib; path = dylibs/libtbb.dylib; sourceTree = "<group>"; };
+		D7BE26C61CF59A1100167E2E /* libtbbmalloc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbbmalloc.dylib; path = dylibs/libtbbmalloc.dylib; sourceTree = "<group>"; };
+		D7BE26C71CF59A1100167E2E /* libut.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libut.dylib; path = dylibs/libut.dylib; sourceTree = "<group>"; };
 		D7E4B16313C24D4600B88BB2 /* matlab.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matlab.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E4B16613C24D4600B88BB2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D7E4B16813C24D4600B88BB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,34 +162,6 @@
 		D7E4B17113C24D4600B88BB2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D7E4B17313C24D4600B88BB2 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		D7F0612019FFF9E900AFD99B /* JTPcollectDependencies.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JTPcollectDependencies.py; sourceTree = "<group>"; };
-		D7F0612119FFFA2C00AFD99B /* libboost_date_time.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_date_time.dylib; path = dylibs/libboost_date_time.dylib; sourceTree = "<group>"; };
-		D7F0612219FFFA2C00AFD99B /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_filesystem.dylib; path = dylibs/libboost_filesystem.dylib; sourceTree = "<group>"; };
-		D7F0612319FFFA2C00AFD99B /* libboost_log.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_log.dylib; path = dylibs/libboost_log.dylib; sourceTree = "<group>"; };
-		D7F0612419FFFA2C00AFD99B /* libboost_regex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_regex.dylib; path = dylibs/libboost_regex.dylib; sourceTree = "<group>"; };
-		D7F0612519FFFA2C00AFD99B /* libboost_serialization.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_serialization.dylib; path = dylibs/libboost_serialization.dylib; sourceTree = "<group>"; };
-		D7F0612619FFFA2C00AFD99B /* libboost_signals.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_signals.dylib; path = dylibs/libboost_signals.dylib; sourceTree = "<group>"; };
-		D7F0612719FFFA2C00AFD99B /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = dylibs/libboost_system.dylib; sourceTree = "<group>"; };
-		D7F0612819FFFA2C00AFD99B /* libboost_thread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_thread.dylib; path = dylibs/libboost_thread.dylib; sourceTree = "<group>"; };
-		D7F0612919FFFA2C00AFD99B /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.0.0.dylib; path = dylibs/libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
-		D7F0612A19FFFA2C00AFD99B /* libhdf5.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5.6.dylib; path = dylibs/libhdf5.6.dylib; sourceTree = "<group>"; };
-		D7F0612B19FFFA2C00AFD99B /* libicudata.49.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicudata.49.1.2.dylib; path = dylibs/libicudata.49.1.2.dylib; sourceTree = "<group>"; };
-		D7F0612C19FFFA2C00AFD99B /* libicudata.49.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicudata.49.dylib; path = dylibs/libicudata.49.dylib; sourceTree = "<group>"; };
-		D7F0612D19FFFA2C00AFD99B /* libicui18n.49.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicui18n.49.1.2.dylib; path = dylibs/libicui18n.49.1.2.dylib; sourceTree = "<group>"; };
-		D7F0612E19FFFA2C00AFD99B /* libicui18n.49.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicui18n.49.dylib; path = dylibs/libicui18n.49.dylib; sourceTree = "<group>"; };
-		D7F0612F19FFFA2C00AFD99B /* libicuio.49.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuio.49.1.2.dylib; path = dylibs/libicuio.49.1.2.dylib; sourceTree = "<group>"; };
-		D7F0613019FFFA2C00AFD99B /* libicuio.49.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuio.49.dylib; path = dylibs/libicuio.49.dylib; sourceTree = "<group>"; };
-		D7F0613119FFFA2C00AFD99B /* libicuuc.49.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuuc.49.1.2.dylib; path = dylibs/libicuuc.49.1.2.dylib; sourceTree = "<group>"; };
-		D7F0613219FFFA2C00AFD99B /* libicuuc.49.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuuc.49.dylib; path = dylibs/libicuuc.49.dylib; sourceTree = "<group>"; };
-		D7F0613319FFFA2C00AFD99B /* libmat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmat.dylib; path = dylibs/libmat.dylib; sourceTree = "<group>"; };
-		D7F0613419FFFA2C00AFD99B /* libmwcpp11compat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwcpp11compat.dylib; path = dylibs/libmwcpp11compat.dylib; sourceTree = "<group>"; };
-		D7F0613519FFFA2C00AFD99B /* libmwfl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwfl.dylib; path = dylibs/libmwfl.dylib; sourceTree = "<group>"; };
-		D7F0613619FFFA2C00AFD99B /* libmwi18n.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwi18n.dylib; path = dylibs/libmwi18n.dylib; sourceTree = "<group>"; };
-		D7F0613719FFFA2C00AFD99B /* libmwMATLAB_res.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwMATLAB_res.dylib; path = dylibs/libmwMATLAB_res.dylib; sourceTree = "<group>"; };
-		D7F0613819FFFA2C00AFD99B /* libmwresource_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmwresource_core.dylib; path = dylibs/libmwresource_core.dylib; sourceTree = "<group>"; };
-		D7F0613919FFFA2C00AFD99B /* libmx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmx.dylib; path = dylibs/libmx.dylib; sourceTree = "<group>"; };
-		D7F0613A19FFFA2C00AFD99B /* libtbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbb.dylib; path = dylibs/libtbb.dylib; sourceTree = "<group>"; };
-		D7F0613B19FFFA2C00AFD99B /* libtbbmalloc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbbmalloc.dylib; path = dylibs/libtbbmalloc.dylib; sourceTree = "<group>"; };
-		D7F0613C19FFFA2C00AFD99B /* libut.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libut.dylib; path = dylibs/libut.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,39 +169,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F0616B19FFFA2C00AFD99B /* libmwresource_core.dylib in Frameworks */,
-				D7F0616D19FFFA2C00AFD99B /* libmx.dylib in Frameworks */,
-				D7F0614B19FFFA2C00AFD99B /* libboost_thread.dylib in Frameworks */,
-				D7F0615519FFFA2C00AFD99B /* libicui18n.49.1.2.dylib in Frameworks */,
-				D7F0614F19FFFA2C00AFD99B /* libhdf5.6.dylib in Frameworks */,
-				D7F0614719FFFA2C00AFD99B /* libboost_signals.dylib in Frameworks */,
-				D7F0616F19FFFA2C00AFD99B /* libtbb.dylib in Frameworks */,
-				D7F0615B19FFFA2C00AFD99B /* libicuio.49.dylib in Frameworks */,
+				D7BE26E61CF59A1100167E2E /* libmwresource_core.dylib in Frameworks */,
+				D7BE26F81CF59A1100167E2E /* libmx.dylib in Frameworks */,
+				D7BE26D81CF59A1100167E2E /* libicui18n.54.dylib in Frameworks */,
 				D7513DA21345F2D600E0AF6A /* QuickLook.framework in Frameworks */,
-				D7F0614319FFFA2C00AFD99B /* libboost_regex.dylib in Frameworks */,
-				D7F0616119FFFA2C00AFD99B /* libmat.dylib in Frameworks */,
-				D7F0616919FFFA2C00AFD99B /* libmwMATLAB_res.dylib in Frameworks */,
-				D7F0615719FFFA2C00AFD99B /* libicui18n.49.dylib in Frameworks */,
-				D7F0615319FFFA2C00AFD99B /* libicudata.49.dylib in Frameworks */,
-				D7F0616519FFFA2C00AFD99B /* libmwfl.dylib in Frameworks */,
-				D7F0615119FFFA2C00AFD99B /* libicudata.49.1.2.dylib in Frameworks */,
-				D7F0615919FFFA2C00AFD99B /* libicuio.49.1.2.dylib in Frameworks */,
+				D7BE26CE1CF59A1100167E2E /* libboost_regex.dylib in Frameworks */,
+				D7BE26E21CF59A1100167E2E /* libmwfl.dylib in Frameworks */,
+				D7BE26FA1CF59A1100167E2E /* libtbb.dylib in Frameworks */,
+				D7BE26F01CF59A1100167E2E /* libicudata.54.1.dylib in Frameworks */,
+				D7BE26DA1CF59A1100167E2E /* libicuuc.54.1.dylib in Frameworks */,
+				D7BE26EC1CF59A1100167E2E /* libboost_signals.dylib in Frameworks */,
 				D7513DA41345F2D600E0AF6A /* ApplicationServices.framework in Frameworks */,
 				D7513DA61345F2D600E0AF6A /* CoreServices.framework in Frameworks */,
-				D7F0614919FFFA2C00AFD99B /* libboost_system.dylib in Frameworks */,
-				D7F0614119FFFA2C00AFD99B /* libboost_log.dylib in Frameworks */,
-				D7F0614D19FFFA2C00AFD99B /* libcrypto.1.0.0.dylib in Frameworks */,
-				D7F0613D19FFFA2C00AFD99B /* libboost_date_time.dylib in Frameworks */,
+				D7BE26E01CF59A1100167E2E /* libmwcpp11compat.dylib in Frameworks */,
+				D7BE26F61CF59A1100167E2E /* libicuio.54.dylib in Frameworks */,
+				D7BE26E41CF59A1100167E2E /* libmwi18n.dylib in Frameworks */,
+				D7BE26D61CF59A1100167E2E /* libicui18n.54.1.dylib in Frameworks */,
+				D7BE26F21CF59A1100167E2E /* libicudata.54.dylib in Frameworks */,
+				D7BE26E81CF59A1100167E2E /* libboost_chrono.dylib in Frameworks */,
+				D7BE26F41CF59A1100167E2E /* libicuio.54.1.dylib in Frameworks */,
+				D7BE26EA1CF59A1100167E2E /* libboost_serialization.dylib in Frameworks */,
+				D7BE26DE1CF59A1100167E2E /* libmat.dylib in Frameworks */,
+				D7BE26CC1CF59A1100167E2E /* libboost_log.dylib in Frameworks */,
+				D7BE26EE1CF59A1100167E2E /* libhdf5.8.dylib in Frameworks */,
+				D7BE26C81CF59A1100167E2E /* libboost_date_time.dylib in Frameworks */,
+				D7BE26FE1CF59A1100167E2E /* libut.dylib in Frameworks */,
+				D7BE26D41CF59A1100167E2E /* libcrypto.1.0.0.dylib in Frameworks */,
+				D7BE26DC1CF59A1100167E2E /* libicuuc.54.dylib in Frameworks */,
 				D7513DA81345F2D600E0AF6A /* CoreFoundation.framework in Frameworks */,
-				D7F0617319FFFA2C00AFD99B /* libut.dylib in Frameworks */,
-				D7F0614519FFFA2C00AFD99B /* libboost_serialization.dylib in Frameworks */,
+				D7BE26FC1CF59A1100167E2E /* libtbbmalloc.dylib in Frameworks */,
+				D7BE26D01CF59A1100167E2E /* libboost_system.dylib in Frameworks */,
 				D7513DF61345F4B800E0AF6A /* AppKit.framework in Frameworks */,
-				D7F0616719FFFA2C00AFD99B /* libmwi18n.dylib in Frameworks */,
-				D7F0617119FFFA2C00AFD99B /* libtbbmalloc.dylib in Frameworks */,
-				D7F0613F19FFFA2C00AFD99B /* libboost_filesystem.dylib in Frameworks */,
-				D7F0615F19FFFA2C00AFD99B /* libicuuc.49.dylib in Frameworks */,
-				D7F0615D19FFFA2C00AFD99B /* libicuuc.49.1.2.dylib in Frameworks */,
-				D7F0616319FFFA2C00AFD99B /* libmwcpp11compat.dylib in Frameworks */,
+				D7BE26D21CF59A1100167E2E /* libboost_thread.dylib in Frameworks */,
+				D7BE26CA1CF59A1100167E2E /* libboost_filesystem.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,80 +209,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F0616E19FFFA2C00AFD99B /* libmx.dylib in Frameworks */,
+				D7BE26F91CF59A1100167E2E /* libmx.dylib in Frameworks */,
+				D7BE26D31CF59A1100167E2E /* libboost_thread.dylib in Frameworks */,
+				D7BE26D71CF59A1100167E2E /* libicui18n.54.1.dylib in Frameworks */,
+				D7BE26FB1CF59A1100167E2E /* libtbb.dylib in Frameworks */,
+				D7BE26F71CF59A1100167E2E /* libicuio.54.dylib in Frameworks */,
+				D7BE26F51CF59A1100167E2E /* libicuio.54.1.dylib in Frameworks */,
+				D7BE26FD1CF59A1100167E2E /* libtbbmalloc.dylib in Frameworks */,
 				D7E4B16413C24D4600B88BB2 /* CoreServices.framework in Frameworks */,
-				D7F0616A19FFFA2C00AFD99B /* libmwMATLAB_res.dylib in Frameworks */,
-				D7F0617019FFFA2C00AFD99B /* libtbb.dylib in Frameworks */,
+				D7BE26DD1CF59A1100167E2E /* libicuuc.54.dylib in Frameworks */,
 				D7E4B16513C24D4600B88BB2 /* CoreFoundation.framework in Frameworks */,
-				D7F0615419FFFA2C00AFD99B /* libicudata.49.dylib in Frameworks */,
-				D7F0617219FFFA2C00AFD99B /* libtbbmalloc.dylib in Frameworks */,
-				D7F0614619FFFA2C00AFD99B /* libboost_serialization.dylib in Frameworks */,
+				D7BE26EF1CF59A1100167E2E /* libhdf5.8.dylib in Frameworks */,
+				D7BE26E71CF59A1100167E2E /* libmwresource_core.dylib in Frameworks */,
 				D7E4B16713C24D4600B88BB2 /* CoreData.framework in Frameworks */,
-				D7F0614C19FFFA2C00AFD99B /* libboost_thread.dylib in Frameworks */,
-				D7F0616819FFFA2C00AFD99B /* libmwi18n.dylib in Frameworks */,
-				D7F0615C19FFFA2C00AFD99B /* libicuio.49.dylib in Frameworks */,
-				D7F0614E19FFFA2C00AFD99B /* libcrypto.1.0.0.dylib in Frameworks */,
-				D7F0617419FFFA2C00AFD99B /* libut.dylib in Frameworks */,
-				D7F0614A19FFFA2C00AFD99B /* libboost_system.dylib in Frameworks */,
-				D7F0615E19FFFA2C00AFD99B /* libicuuc.49.1.2.dylib in Frameworks */,
-				D7F0614019FFFA2C00AFD99B /* libboost_filesystem.dylib in Frameworks */,
-				D7F0616619FFFA2C00AFD99B /* libmwfl.dylib in Frameworks */,
-				D7F0616219FFFA2C00AFD99B /* libmat.dylib in Frameworks */,
-				D7F0616419FFFA2C00AFD99B /* libmwcpp11compat.dylib in Frameworks */,
+				D7BE26FF1CF59A1100167E2E /* libut.dylib in Frameworks */,
+				D7BE26E31CF59A1100167E2E /* libmwfl.dylib in Frameworks */,
+				D7BE26CB1CF59A1100167E2E /* libboost_filesystem.dylib in Frameworks */,
+				D7BE26DF1CF59A1100167E2E /* libmat.dylib in Frameworks */,
+				D7BE26ED1CF59A1100167E2E /* libboost_signals.dylib in Frameworks */,
 				D7E4B16913C24D4600B88BB2 /* Foundation.framework in Frameworks */,
-				D7F0614819FFFA2C00AFD99B /* libboost_signals.dylib in Frameworks */,
-				D7F0614219FFFA2C00AFD99B /* libboost_log.dylib in Frameworks */,
-				D7F0615819FFFA2C00AFD99B /* libicui18n.49.dylib in Frameworks */,
-				D7F0615019FFFA2C00AFD99B /* libhdf5.6.dylib in Frameworks */,
-				D7F0616C19FFFA2C00AFD99B /* libmwresource_core.dylib in Frameworks */,
-				D7F0615A19FFFA2C00AFD99B /* libicuio.49.1.2.dylib in Frameworks */,
-				D7F0615219FFFA2C00AFD99B /* libicudata.49.1.2.dylib in Frameworks */,
-				D7F0614419FFFA2C00AFD99B /* libboost_regex.dylib in Frameworks */,
-				D7F0613E19FFFA2C00AFD99B /* libboost_date_time.dylib in Frameworks */,
-				D7F0616019FFFA2C00AFD99B /* libicuuc.49.dylib in Frameworks */,
-				D7F0615619FFFA2C00AFD99B /* libicui18n.49.1.2.dylib in Frameworks */,
+				D7BE26EB1CF59A1100167E2E /* libboost_serialization.dylib in Frameworks */,
+				D7BE26D11CF59A1100167E2E /* libboost_system.dylib in Frameworks */,
+				D7BE26D91CF59A1100167E2E /* libicui18n.54.dylib in Frameworks */,
+				D7BE26E51CF59A1100167E2E /* libmwi18n.dylib in Frameworks */,
+				D7BE26CD1CF59A1100167E2E /* libboost_log.dylib in Frameworks */,
+				D7BE26F31CF59A1100167E2E /* libicudata.54.dylib in Frameworks */,
+				D7BE26CF1CF59A1100167E2E /* libboost_regex.dylib in Frameworks */,
+				D7BE26C91CF59A1100167E2E /* libboost_date_time.dylib in Frameworks */,
+				D7BE26E91CF59A1100167E2E /* libboost_chrono.dylib in Frameworks */,
+				D7BE26D51CF59A1100167E2E /* libcrypto.1.0.0.dylib in Frameworks */,
+				D7BE26E11CF59A1100167E2E /* libmwcpp11compat.dylib in Frameworks */,
+				D7BE26DB1CF59A1100167E2E /* libicuuc.54.1.dylib in Frameworks */,
+				D7BE26F11CF59A1100167E2E /* libicudata.54.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D71E179D1347818F0057D44F /* Mathworks 2014a dylibs */ = {
+		D71E179D1347818F0057D44F /* Mathworks 2016a dylibs */ = {
 			isa = PBXGroup;
 			children = (
-				D7F0612119FFFA2C00AFD99B /* libboost_date_time.dylib */,
-				D7F0612219FFFA2C00AFD99B /* libboost_filesystem.dylib */,
-				D7F0612319FFFA2C00AFD99B /* libboost_log.dylib */,
-				D7F0612419FFFA2C00AFD99B /* libboost_regex.dylib */,
-				D7F0612519FFFA2C00AFD99B /* libboost_serialization.dylib */,
-				D7F0612619FFFA2C00AFD99B /* libboost_signals.dylib */,
-				D7F0612719FFFA2C00AFD99B /* libboost_system.dylib */,
-				D7F0612819FFFA2C00AFD99B /* libboost_thread.dylib */,
-				D7F0612919FFFA2C00AFD99B /* libcrypto.1.0.0.dylib */,
-				D7F0612A19FFFA2C00AFD99B /* libhdf5.6.dylib */,
-				D7F0612B19FFFA2C00AFD99B /* libicudata.49.1.2.dylib */,
-				D7F0612C19FFFA2C00AFD99B /* libicudata.49.dylib */,
-				D7F0612D19FFFA2C00AFD99B /* libicui18n.49.1.2.dylib */,
-				D7F0612E19FFFA2C00AFD99B /* libicui18n.49.dylib */,
-				D7F0612F19FFFA2C00AFD99B /* libicuio.49.1.2.dylib */,
-				D7F0613019FFFA2C00AFD99B /* libicuio.49.dylib */,
-				D7F0613119FFFA2C00AFD99B /* libicuuc.49.1.2.dylib */,
-				D7F0613219FFFA2C00AFD99B /* libicuuc.49.dylib */,
-				D7F0613319FFFA2C00AFD99B /* libmat.dylib */,
-				D7F0613419FFFA2C00AFD99B /* libmwcpp11compat.dylib */,
-				D7F0613519FFFA2C00AFD99B /* libmwfl.dylib */,
-				D7F0613619FFFA2C00AFD99B /* libmwi18n.dylib */,
-				D7F0613719FFFA2C00AFD99B /* libmwMATLAB_res.dylib */,
-				D7F0613819FFFA2C00AFD99B /* libmwresource_core.dylib */,
-				D7F0613919FFFA2C00AFD99B /* libmx.dylib */,
-				D7F0613A19FFFA2C00AFD99B /* libtbb.dylib */,
-				D7F0613B19FFFA2C00AFD99B /* libtbbmalloc.dylib */,
-				D7F0613C19FFFA2C00AFD99B /* libut.dylib */,
+				D7BE26AC1CF59A1100167E2E /* libboost_date_time.dylib */,
+				D7BE26AD1CF59A1100167E2E /* libboost_filesystem.dylib */,
+				D7BE26AE1CF59A1100167E2E /* libboost_log.dylib */,
+				D7BE26AF1CF59A1100167E2E /* libboost_regex.dylib */,
+				D7BE26B01CF59A1100167E2E /* libboost_system.dylib */,
+				D7BE26B11CF59A1100167E2E /* libboost_thread.dylib */,
+				D7BE26B21CF59A1100167E2E /* libcrypto.1.0.0.dylib */,
+				D7BE26B31CF59A1100167E2E /* libicui18n.54.1.dylib */,
+				D7BE26B41CF59A1100167E2E /* libicui18n.54.dylib */,
+				D7BE26B51CF59A1100167E2E /* libicuuc.54.1.dylib */,
+				D7BE26B61CF59A1100167E2E /* libicuuc.54.dylib */,
+				D7BE26B71CF59A1100167E2E /* libmat.dylib */,
+				D7BE26B81CF59A1100167E2E /* libmwcpp11compat.dylib */,
+				D7BE26B91CF59A1100167E2E /* libmwfl.dylib */,
+				D7BE26BA1CF59A1100167E2E /* libmwi18n.dylib */,
+				D7BE26BB1CF59A1100167E2E /* libmwresource_core.dylib */,
+				D7BE26BC1CF59A1100167E2E /* libboost_chrono.dylib */,
+				D7BE26BD1CF59A1100167E2E /* libboost_serialization.dylib */,
+				D7BE26BE1CF59A1100167E2E /* libboost_signals.dylib */,
+				D7BE26BF1CF59A1100167E2E /* libhdf5.8.dylib */,
+				D7BE26C01CF59A1100167E2E /* libicudata.54.1.dylib */,
+				D7BE26C11CF59A1100167E2E /* libicudata.54.dylib */,
+				D7BE26C21CF59A1100167E2E /* libicuio.54.1.dylib */,
+				D7BE26C31CF59A1100167E2E /* libicuio.54.dylib */,
+				D7BE26C41CF59A1100167E2E /* libmx.dylib */,
+				D7BE26C51CF59A1100167E2E /* libtbb.dylib */,
+				D7BE26C61CF59A1100167E2E /* libtbbmalloc.dylib */,
+				D7BE26C71CF59A1100167E2E /* libut.dylib */,
 				D731C466139CD16E00A2F314 /* mat.h */,
 				D731C467139CD16E00A2F314 /* matrix.h */,
 				D731C468139CD16E00A2F314 /* tmwtypes.h */,
 			);
-			name = "Mathworks 2014a dylibs";
+			name = "Mathworks 2016a dylibs";
 			sourceTree = "<group>";
 		};
 		D7513D911345F2D600E0AF6A = {
@@ -313,7 +313,7 @@
 		D7513DA01345F2D600E0AF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D71E179D1347818F0057D44F /* Mathworks 2014a dylibs */,
+				D71E179D1347818F0057D44F /* Mathworks 2016a dylibs */,
 				D7513DF51345F4B800E0AF6A /* AppKit.framework */,
 				D7513DA11345F2D600E0AF6A /* QuickLook.framework */,
 				D7513DA31345F2D600E0AF6A /* ApplicationServices.framework */,
@@ -386,7 +386,7 @@
 /* Begin PBXLegacyTarget section */
 		D7F0617A19FFFFF300AFD99B /* Collecting Dependencies */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(SRCROOT)/JTPcollectDependencies.py -v /Applications/MATLAB_R2014a.app/bin/maci64/libmat.dylib $(SRCROOT)/dylibs";
+			buildArgumentsString = "$(SRCROOT)/JTPcollectDependencies.py -v $(MATLAB_HOME)/bin/maci64/libmat.dylib $(SRCROOT)/dylibs";
 			buildConfigurationList = D7F0617B19FFFFF300AFD99B /* Build configuration list for PBXLegacyTarget "Collecting Dependencies" */;
 			buildPhases = (
 			);
@@ -445,7 +445,7 @@
 		D7513D931345F2D600E0AF6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Imperial College";
 				TargetAttributes = {
 					D7F0617A19FFFFF300AFD99B = {
@@ -505,7 +505,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# Use cpio in order to preserve symlinks\n\necho \"Copying Matlab libraries.\"\ncd ${PROJECT_DIR}/dylibs\nif [ ! -d ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks ];\nthen\n    mkdir ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\nfi\nfind . -depth -print0 | cpio --null -pvd ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\nexit 0";
+			shellScript = "# Use cpio in order to preserve symlinks\n\necho \"Copying Matlab libraries.\"\necho \"From: ${PROJECT_DIR}/dylibs\"\necho \"To: ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\"\ncd \"${PROJECT_DIR}/dylibs\"\nif [ ! -d ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks ];\nthen\n    mkdir ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\nfi\nfind . -depth -print0 | cpio --null -pvd \"${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\"\nexit 0";
 		};
 		D78D113913C30BC100012B6D /* Copy dylibs */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -585,7 +585,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -596,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
@@ -615,6 +617,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -622,7 +625,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 			};
@@ -646,10 +649,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\"$(SYSTEM_APPS_DIR)/MATLAB_R2013a.app/bin/maci64\"",
-					"\"$(SRCROOT)/dylibs\"",
 					"$(PROJECT_DIR)/dylibs",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.smrsgroup.matlab.qlgenerator;
 				PRODUCT_NAME = matlab;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = qlgenerator;
@@ -673,10 +675,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\"$(SYSTEM_APPS_DIR)/MATLAB_R2013a.app/bin/maci64\"",
-					"\"$(SRCROOT)/dylibs\"",
 					"$(PROJECT_DIR)/dylibs",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.smrsgroup.matlab.qlgenerator;
 				PRODUCT_NAME = matlab;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = qlgenerator;
@@ -703,6 +704,7 @@
 					"$(PROJECT_DIR)/dylibs",
 				);
 				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.smrsgroup.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = matlab;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
@@ -730,6 +732,7 @@
 					"$(PROJECT_DIR)/dylibs",
 				);
 				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.smrsgroup.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = matlab;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
@@ -758,7 +761,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				MATLAB_HOME = /Applications/MATLAB2014a.app;
+				MATLAB_HOME = /Applications/MATLAB_R2016a.app;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -781,7 +784,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				MATLAB_HOME = /Applications/MATLAB2014a.app;
+				MATLAB_HOME = /Applications/MATLAB_R2016a.app;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
