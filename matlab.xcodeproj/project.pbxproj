@@ -519,7 +519,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# Use cpio in order to preserve symlinks\n\necho \"Copying Matlab libraries.\"\ncd ${PROJECT_DIR}/dylibs\nif [ ! -d ${TARGET_BUILD_DIR}/matlab.mdimporter/Contents/Frameworks ];\nthen\nmkdir ${TARGET_BUILD_DIR}/matlab.mdimporter/Contents/Frameworks\nfi\nfind . -depth -print0 | cpio --null -pvd ${TARGET_BUILD_DIR}/matlab.mdimporter/Contents/Frameworks\nexit 0";
+			shellScript = "# Use cpio in order to preserve symlinks\n\necho \"Copying Matlab libraries.\"\necho \"From: ${PROJECT_DIR}/dylibs\"\necho \"To: ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\"\ncd \"${PROJECT_DIR}/dylibs\"\nif [ ! -d ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks ];\nthen\nmkdir ${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\nfi\nfind . -depth -print0 | cpio --null -pvd \"${TARGET_BUILD_DIR}/matlab.qlgenerator/Contents/Frameworks\"\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
